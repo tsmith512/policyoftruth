@@ -253,18 +253,19 @@ div.col-three .last {
 /*********************************************
  * ICONS
  *********************************************/
-.reveal .icon {
-  display: inline; }
-  .reveal .icon span {
+.icon {
+  display: inline !important; }
+  .icon span {
     display: none; }
-  .reveal .icon.big:before {
-    font-size: 4em;
+  .icon.big:before {
+    font-size: 4em !important;
     margin-bottom: 0.375em;
     text-shadow: 2px 2px 0 #13171d; }
-  .reveal .icon:before {
+  .icon:before {
     margin: 0.125em 0.075em;
     display: inline-block;
-    font-size: 3em; }
+    font-size: 3em;
+    color: #45576a; }
 
 .reveal h3.iconinline:before {
   font-size: 0.9em !important;
@@ -292,65 +293,65 @@ div.col-three .last {
   content: 'D';
   color: #23cc6f; }
 
+.browser:before {
+  font-family: 'Acta Symbols W95 Office';
+  content: 'Q'; }
+
 .arrow-right-stroke:before {
   font-family: 'Acta Symbols W95 Arrows';
   font-size: 1.5em !important;
   vertical-align: 0.375em;
-  content: 'B';
-  color: #45576a; }
+  content: 'B'; }
 
 .number1:before {
   font-family: 'ActaSymbolsW95-Circles';
-  font-size: 2em !important;
-  content: '1';
-  color: #45576a; }
+  font-size: 2em;
+  content: '1'; }
 
 .number2:before {
   font-family: 'ActaSymbolsW95-Circles';
-  font-size: 2em !important;
-  content: '2';
-  color: #45576a; }
+  font-size: 2em;
+  content: '2'; }
 
 .number3:before {
   font-family: 'ActaSymbolsW95-Circles';
-  font-size: 2em !important;
-  content: '3';
-  color: #45576a; }
+  font-size: 2em;
+  content: '3'; }
 
 .person:before {
   font-family: 'icomoon';
+  font-size: 2em;
   content: '\e070'; }
 
 .people:before {
   font-family: 'icomoon';
+  font-size: 2em;
+  vertical-align: 0.1em;
   content: '\e071'; }
 
 .drop:before {
   font-family: 'icomoon';
+  font-size: 2em;
   content: '\e00a'; }
 
 .orgtree:before {
-  font-size: 2em !important;
   font-family: 'icomoon';
-  color: #45576a;
+  font-size: 2em;
   content: '\e0b9'; }
 
 .inbox:before {
-  font-size: 2em !important;
   font-family: 'icomoon';
-  color: #45576a;
+  font-size: 2em;
   content: '\e05a'; }
 
 .paperpair:before {
-  font-size: 2em !important;
   font-family: 'icomoon';
-  color: #45576a;
+  font-size: 2em;
   content: '\e027'; }
 
 .dialog:before {
-  font-size: 2em !important;
   font-family: 'icomoon';
-  color: #45576a;
+  font-size: 2em;
   content: '\e06c'; }
 
 /*********************************************

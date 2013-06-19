@@ -334,13 +334,13 @@ div.col-three {
 /*********************************************
  * ICONS
  *********************************************/
-.reveal .icon {
-  display: inline;
+.icon {
+  display: inline !important;
 
   span { display: none; }
 
   &.big:before {
-    font-size: 4em;
+    font-size: 4em !important;
     margin-bottom: 0.375em;
     text-shadow: 2px 2px 0 darken($navy, 15%);
   }
@@ -349,6 +349,7 @@ div.col-three {
     margin: 0.125em 0.075em;
     display: inline-block;
     font-size: 3em;
+    color: lighten($navy, 10%);
   }
 }
 
@@ -368,6 +369,7 @@ div.col-three {
     color: $blue;
   }
 }
+
 .draft-first {
   &:before {
     font-family:'Acta Symbols W95 Office';
@@ -375,6 +377,7 @@ div.col-three {
     color: crimson;
   }
 }
+
 .draft-revised {
   &:before {
     font-family:'Acta Symbols W95 Office';
@@ -382,11 +385,19 @@ div.col-three {
     color: orange;
   }
 }
+
 .draft-final {
   &:before {
     font-family:'Acta Symbols W95 Office';
     content: 'D';
     color: $lime;
+  }
+}
+
+.browser {
+  &:before {
+    font-family:'Acta Symbols W95 Office';
+    content: 'Q';
   }
 }
 
@@ -396,40 +407,37 @@ div.col-three {
     font-size: 1.5em !important;
     vertical-align: 0.375em;
     content: 'B';
-    color: lighten($navy, 10%);
   }
 }
 
 .number1 {
   &:before {
     font-family:'ActaSymbolsW95-Circles';
-    font-size: 2em !important;
+    font-size: 2em;
     content: '1';
-    color: lighten($navy, 10%);
   }
 }
 
 .number2 {
   &:before {
     font-family:'ActaSymbolsW95-Circles';
-    font-size: 2em !important;
+    font-size: 2em;
     content: '2';
-    color: lighten($navy, 10%);
   }
 }
 
 .number3 {
   &:before {
     font-family:'ActaSymbolsW95-Circles';
-    font-size: 2em !important;
+    font-size: 2em;
     content: '3';
-    color: lighten($navy, 10%);
   }
 }
 
 .person {
   &:before {
     font-family:'icomoon';
+    font-size: 2em;
     content: '\e070';
   }
 }
@@ -437,6 +445,8 @@ div.col-three {
 .people {
   &:before {
     font-family:'icomoon';
+    font-size: 2em;
+    vertical-align: 0.1em; // Bump this up, it sits pretty heavy on its baseline
     content: '\e071';
   }
 }
@@ -444,43 +454,39 @@ div.col-three {
 .drop {
   &:before {
     font-family:'icomoon';
+    font-size: 2em;
     content: '\e00a';
   }
 }
 
 .orgtree {
   &:before {
-    font-size: 2em !important;
     font-family:'icomoon';
-    color: lighten($navy, 10%);
+    font-size: 2em;
     content: '\e0b9';
   }
 }
 
 .inbox {
   &:before {
-    font-size: 2em !important;
     font-family:'icomoon';
-    color: lighten($navy, 10%);
+    font-size: 2em;
     content: '\e05a';
   }
 }
 
 .paperpair {
   &:before {
-    font-size: 2em !important;
     font-family:'icomoon';
-    color: lighten($navy, 10%);
+    font-size: 2em;
     content: '\e027';
   }
 }
 
-
 .dialog {
   &:before {
-    font-size: 2em !important;
     font-family:'icomoon';
-    color: lighten($navy, 10%);
+    font-size: 2em;
     content: '\e06c';
   }
 }
