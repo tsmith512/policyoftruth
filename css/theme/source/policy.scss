@@ -41,7 +41,14 @@ font-family:'Museo W01 500';
 font-family:'Museo W01 700';
 font-family:'Museo W01 900';
 
-
+font-family:'Acta Symbols W95 Arrows';
+font-family:'ActaSymbolsW95-Circles';
+font-family:'ActaSymbolsW95-Flowers';
+font-family:'Acta Symbols W95 Labels';
+font-family:'Acta Symbols W95 Office';
+font-family:'Acta Symbols W95 Stars';
+font-family:'Acta Symbols W95 Time';
+font-family:'ActaSymbolsW95-Weather';
 */
 
 // Colors
@@ -252,6 +259,213 @@ body {
   text-align: center;
   text-shadow: 2px 2px 0 #000;
 }
+
+/*********************************************
+ * COLUMNS
+ *********************************************/
+div.col-two, div.col-three {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  .col {
+    -webkit-flex: 1 0 0;
+    -moz-flex: 1 0 0;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .centered {
+    text-align: center;
+  }
+}
+div.col-two {
+  .col {
+    width: 50%;
+  }
+
+  .left {
+    float: left;
+    padding-right: 1em;
+    border-right: 1px solid lighten($navy, 5%);
+  }
+
+  .right {
+    float: right;
+    padding-left: 1em;
+    border-left: 1px solid darken($navy, 5%);
+  }
+}
+
+div.col-three {
+  .col {
+    width: 33.3%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+  }
+  .first {
+    border-right: 1px solid lighten($navy, 5%);
+  }
+  .middle {
+    border-right: 1px solid lighten($navy, 5%);
+    border-left: 1px solid darken($navy, 5%);
+  }
+  .last {
+    border-left: 1px solid darken($navy, 5%);
+  }
+}
+
+/*********************************************
+ * ICONS
+ *********************************************/
+.reveal .icon {
+  display: inline;
+
+  span { display: none; }
+
+  &.big:before {
+    font-size: 4em;
+    margin-bottom: 0.375em;
+    text-shadow: 2px 2px 0 darken($navy, 15%);
+  }
+
+  &:before {
+    margin: 0.125em 0.075em;
+    display: inline-block;
+    font-size: 3em;
+  }
+}
+
+.reveal h3.iconinline {
+  &:before {
+    font-size: 0.9em !important;
+    line-height: 0;
+    margin-right: 0.5em;
+    color: white;
+  }
+}
+
+.draft-empty {
+  &:before {
+    font-family:'Acta Symbols W95 Office';
+    content: '0';
+    color: $blue;
+  }
+}
+.draft-first {
+  &:before {
+    font-family:'Acta Symbols W95 Office';
+    content: '2';
+    color: crimson;
+  }
+}
+.draft-revised {
+  &:before {
+    font-family:'Acta Symbols W95 Office';
+    content: '3';
+    color: orange;
+  }
+}
+.draft-final {
+  &:before {
+    font-family:'Acta Symbols W95 Office';
+    content: 'D';
+    color: $lime;
+  }
+}
+
+.arrow-right-stroke {
+  &:before {
+    font-family:'Acta Symbols W95 Arrows';
+    font-size: 1.5em !important;
+    vertical-align: 0.375em;
+    content: 'B';
+    color: lighten($navy, 10%);
+  }
+}
+
+.number1 {
+  &:before {
+    font-family:'ActaSymbolsW95-Circles';
+    font-size: 2em !important;
+    content: '1';
+    color: lighten($navy, 10%);
+  }
+}
+
+.number2 {
+  &:before {
+    font-family:'ActaSymbolsW95-Circles';
+    font-size: 2em !important;
+    content: '2';
+    color: lighten($navy, 10%);
+  }
+}
+
+.number3 {
+  &:before {
+    font-family:'ActaSymbolsW95-Circles';
+    font-size: 2em !important;
+    content: '3';
+    color: lighten($navy, 10%);
+  }
+}
+
+.person {
+  &:before {
+    font-family:'icomoon';
+    content: '\e070';
+  }
+}
+
+.people {
+  &:before {
+    font-family:'icomoon';
+    content: '\e071';
+  }
+}
+
+.drop {
+  &:before {
+    font-family:'icomoon';
+    content: '\e00a';
+  }
+}
+
+.orgtree {
+  &:before {
+    font-size: 2em !important;
+    font-family:'icomoon';
+    color: lighten($navy, 10%);
+    content: '\e0b9';
+  }
+}
+
+.inbox {
+  &:before {
+    font-size: 2em !important;
+    font-family:'icomoon';
+    color: lighten($navy, 10%);
+    content: '\e05a';
+  }
+}
+
 
 /*********************************************
  * NAVIGATION CONTROLS

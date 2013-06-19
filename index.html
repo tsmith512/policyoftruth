@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>reveal.js - The HTML Presentation Framework</title>
+    <title>Policy of Truth: On our Adventures with Drupal Workbench</title>
 
     <meta name="description" content="A presentation on Workbench, Workbench Modeation, and Workbench Access for Drupal 7 with workflow examples.">
     <meta name="author" content="David Diers and Taylor Smith of Four Kitchens">
@@ -16,6 +16,7 @@
 
     <script type="text/javascript" src="http://fast.fonts.com/jsapi/96befd0d-cd0e-4eba-9cd7-6f6bea29dae1.js"></script>
     <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="icomoon/style.css" id="icomoon">
     <link rel="stylesheet" href="css/theme/policy.css" id="theme">
 
     <!-- For syntax highlighting -->
@@ -50,14 +51,15 @@
         </section>
 
         <section>
-          <h2>In this Presentation</h2>
+          <h2>In this presentation</h2>
           <ul>
             <li>
               <strong><a href="#/worklow-lead">Workflow</a></strong> &mdash;
               What is it? Why would I need it?
             </li>
             <li>
-              <strong>Business Needs</strong> of Stanford's DOR and
+              <strong>Business Needs</strong> of
+              <a href="#/dor-lead">Stanford's DOR</a> and
               <a href="#/upo-lead">UTexas's UPO</a>
             </li>
             <li>
@@ -84,7 +86,7 @@
         <section>
           <h2 class="static-title">Workflow</h2>
           <section id="worklow-lead">
-            <h3>What is Workflow?</h3>
+            <h3>What is workflow?</h3>
             <blockquote>
               The movement of documents around an organisation for purposes
               including sign-off, evaluation, performing activities in a process
@@ -96,36 +98,42 @@
             </blockquote>
           </section>
           <section>
-            <h3>An Example: The Foodie Blogger</h3>
-            <ul>
-              <li>
-                <strong>Sole Contributor:</strong> The foodie blogger
+            <h3>An example: the foodie blogger</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <figure class="icon big person"><span>Single Author</span></figure>
+                <p class="callout">Sole Contributor</p>
+              </div>
+              <div class="col right">
                 <ol>
-                  <li>Author creates and revises unpublised content</li>
-                  <li>Publishes content</li>
+                  <li>Author creates and revises unpublished content.</li>
+                  <li>Author publishes content.</li>
                 </ol>
-              </li>
-            </ul>
+              </div>
+            </div>
           </section>
           <section>
-            <h3>An Example: Small News Website</h3>
-            <ul>
-              <li>
-                <strong>Contributor / Editor:</strong> Small <abbr title="like Hipster Huffington Post (before it got big)">news site</abbr>
+            <h3>An example: small news website</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <figure class="icon big people"><span>Single Author</span></figure>
+                <p class="callout">Contributors &amp; Editors</p>
+              </div>
+              <div class="col right">
                 <ol>
-                  <li>Contributor creates and revises unpublished content</li>
-                  <li>Contributor signals Editors to review</li>
+                  <li>Contributors create / revise unpublished content</li>
+                  <li>Contributors signals Editors to review</li>
                   <li>
                     Editor may&hellip;
                     <ul>
-                      <li>&hellip;suggest edits and return to Contributor.</li>
-                      <li>&hellip;make edits.</li>
-                      <li>&hellip;publish.</li>
+                      <li>Suggest edits.</li>
+                      <li>Make edits.</li>
+                      <li>Publish.</li>
                     </ul>
                   </li>
                 </ol>
-              </li>
-            </ul>
+              </div>
+            </div>
           </section>
         </section>
         <!-- /Workflow -->
@@ -134,40 +142,43 @@
         <section>
           <h2 class="static-title">University Policy Office: Case Study</h2>
           <section id="upo-lead">
+            <h3>Who is UPO?</h3>
+            <p class="callout">
+              The University Policy Office at The University of Texas at Austin
+            </p>
+            <div class="col-three">
+              <div class="col first centered">
+                <p>A new office within Office of Compliance,</p>
+              </div>
+              <div class="col middle centered">
+                <p>supported by the <abbr title="a.k.a. 'POAG', an elected council">
+                Policy Office Advisory Group</abbr>,</p>
+              </div>
+              <div class="col last centered">
+                <p>working closely with President's Office and Leagal Services.</p>
+              </div>
+            </div>
+          </section>
+          <section>
             <h3>What does UPO do?</h3>
             <ol>
               <li>
-                Create and maintain <abbr title="a.k.a. 'The H.O.P'">
-                University Handbook of Operating Procedures</abbr>.
+                <strong>Create / maintain</strong> <abbr title="a.k.a. 'The H.O.P'">
+                Handbook of Operating Procedures</abbr>.
               </li>
               <li>
-                Recording history of changes, approvals, and effective dates
+                <strong>Record history</strong> of changes, approvals, and effective dates
                 of Policy Documents therein.
               </li>
               <li>
-                Guide documents through a complex review process engaging policy 
-                owners, sponsors, subject matter experts, and advisors.
+                <strong>Guide documents through a complex review</strong> process
+                engaging policy owners, sponsors, subject matter experts, and advisors.
               </li>
               <li>
-                Collecting and connecting stores of University policy.
+                Gather and <strong>compile legacy stores</strong> of University policy.
               </li>
               <li>
-                Providing accurate history to Legal Services for
-                dispute resolution.
-              </li>
-            </ol>
-          </section>
-          <section>
-            <h3>Who is UPO?</h3>
-            <ol>
-              <li>New office within Office of Compliance</li>
-              <li>
-                Supported by the <abbr title="a.k.a. 'POAG'"> Policy Office
-                Advisory Group</abbr>, an elected council of business owners
-              </li>
-              <li>
-                Working closely with Office of the President and University 
-                Legal Services
+                <strong>Provide accurate history</strong> for dispute resolution.
               </li>
             </ol>
           </section>
@@ -198,7 +209,7 @@
             </ol>
           </section>
           <section>
-            <h3>A Workflow Model for UPO</h3>
+            <h3>A workflow model for UPO:</h3>
             <blockquote>
               [[ Yep, need to draw this. Gonna do that. ]]
             </blockquote>
@@ -211,29 +222,41 @@
           <h2 class="static-title">Chosing Drupal</h2>
           <section id="drupal-lead">
             <h3>Why Drupal?</h3>
-            <ul>
-              <li>Robust content modeling</li>
-              <li>Unify workflow application and content management</li>
-              <li>Abandon deeply disappointing proprietary CMS</li>
-              <li>Cost effectiveness</li>
-            </ul>
+            <div class="col-two">
+              <div class="col left centered">
+                <br /><br />
+                <figure class="icon big drop"><span>Drupal</span></figure>
+              </div>
+              <div class="col right">
+                <ul>
+                  <li>Robust content modeling</li>
+                  <li>Unify workflow application and content management</li>
+                  <li>Abandon deeply disappointing proprietary CMS</li>
+                  <li>Cost effectiveness</li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section>
-            <h3>Chosing Drupal as CMS &rarr; Drupal for Workflow </h3>
-            <ul>
-              <li>
-                Updated public site generated &ldquo;buy-in&rdquo;
-                from stakeholders
-              </li>
-              <li>
-                Experience in management of published content natually led to
-                management of &ldquo;pre-published&rdquo; content.
-              </li>
-              <li>
-                Previous experience with Workbench led us to believe it was
-                well suited to this task as well.
-              </li>
-            </ul>
+            <h3>Chosing Drupal as CMS &rarr; Drupal for workflow </h3>
+
+            <div class="col-three">
+              <div class="col first centered">
+                <figure class="icon number1"><span>1.</span></figure>
+                <p>Updated public site generated &ldquo;buy-in&rdquo;
+                from stakeholders</p>
+              </div>
+              <div class="col middle centered">
+                <figure class="icon number2"><span>2.</span></figure>
+                <p>Experience in management of published content natually led to
+                management of &ldquo;pre-published&rdquo; content.</p>
+              </div>
+              <div class="col last centered">
+                <figure class="icon number3"><span>3.</span></figure>
+                <p>Previous experience with Workbench led us to believe it was
+                well suited to this task as well&hellip;</p>
+              </div>
+            </div>
           </section>
         </section>
         <!-- /Drupal -->
@@ -242,22 +265,117 @@
         <section>
           <h2 class="static-title">Enter the Workbench</h2>
           <section id="workbench-lead">
-            <h3>What is <a href="http://drupal.org/project/workbench">Workbench</a>?</h3>
+            <h3>What is Workbench?</h3>
             <blockquote>
-              workbench description
+              Workbench provides overall improvements for managing content that
+              Drupal does not provide out of the box.
+              <div class="attribution">
+                <a href="https://drupal.org/project/workbench">Workbench Project Page</a>
+              </div>
             </blockquote>
           </section>
           <section>
             <h3>What does Workbench do?</h3>
-            <blockquote>
-              workbench description
-            </blockquote>
+            <div class="col-two">
+              <div class="col left centered">
+                <figure class="icon inbox"><span>Revision in Inbox</span></figure>
+                <p class="callout">Moderation</p>
+                <p>
+                  Customizable, multi-stepped <strong>revision and approval
+                  workflow</strong> for publishing content.</p>
+              </div>
+              <div class="col right centered">
+                <figure class="icon orgtree"><span>Organization Tree</span></figure>
+                <p class="callout">Access</p>
+                <p>
+                  <strong>Access based on editorial sections</strong> taken from
+                  hierarchical orgianizational structure.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="dor-lead">
+            <h3 class="iconinline inbox">Workbench Moderation: Stanford DoR</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <figure class="icon number1"><span>1.</span></figure><br />
+                <figure class="icon draft-empty"><span>First Draft</span></figure>
+                <figure class="icon arrow-right-stroke"><span>&rarr;</span></figure>
+                <figure class="icon draft-first"><span>Second Draft</span></figure>
+                <p>
+                  <strong>Content Producer</strong>
+                  <small>creates new content or proposes revisions.</small>
+                </p>
+              </div>
+              <div class="col middle centered">
+                <figure class="icon number2"><span>2.</span></figure><br />
+                <figure class="icon draft-first"><span>Draft from Producer</span></figure>
+                <figure class="icon arrow-right-stroke"><span>&rarr;</span></figure>
+                <figure class="icon draft-revised"><span>Revised Draft</span></figure>
+                <p>
+                  <strong>Content Approver</strong>
+                  <small>with domain knowledge revises and approves.</small>
+                </p>
+              </div>
+              <div class="col last centered">
+                <figure class="icon number3"><span>3.</span></figure><br />
+                <figure class="icon draft-revised"><span>Revision from Approver</span></figure>
+                <figure class="icon arrow-right-stroke"><span>&rarr;</span></figure>
+                <figure class="icon draft-final"><span>Finalized Draft</span></figure>
+                <p>
+                  <strong>Content Admin</strong>
+                  <small>with Univerity expertise publishes.</small>
+                </p>
+              </div>
+            </div>
           </section>
           <section>
-            <h3>How did Workbench help Stanford's Dean or Research?</h3>
-            <blockquote>
-              also need to diagram this workflow pattern, simpler&hellip;
-            </blockquote>
+            <h3 class="iconinline orgtree">Workbench Access: Stanford DoR</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <p>
+                  <strong>Admins</strong> have site-wide access.
+                  <strong>Approvers</strong> oversee relevant departments.
+                  <strong>Providers</strong> author in specific categories.
+                </p>
+              </div>
+              <div class="col right">
+                <small><ul><li>
+                  Site-Wide Access
+                  <ul>
+                    <li>
+                      Policy Documents
+                      <ul>
+                        <li>Research Policy</li>
+                        <li>Property Policy</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Research &amp; Scholarship
+                      <ul>
+                        <li>Funding</li>
+                        <li>Training</li>
+                        <li>Administration</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li></ul></small>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3 class="iconinline orgtree">Workbench worked for DoR. What about UPO?</h3>
+            <div class="col-two">
+              <div class="col left">
+                <p class="callout">Rehash UPO workflow figure</p>
+              </div>
+              <div class="col right">
+                <ul>
+                  <li>Moderation and storage of revisions.</li>
+                  <li>Access to &ldquo;Review Groups&rdquo; seemed doable?</li>
+                </ul>
+              </div>
+            </div>
           </section>
         </section>
         <!-- /Workbench -->
@@ -283,6 +401,19 @@
               Lowering costs while meeting requirements is possible through
               novel configurations and customizations.
             </p>
+          </section>
+          <section>
+            <h3>From CMS &rarr; Workflow Tool</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <figure class="icon number1"><span>1.</span></figure><br />
+                <p class="callout">Diving into business logic and domain knowledge</p>
+              </div>
+              <div class="col right centered">
+                <figure class="icon number2"><span>2.</span></figure><br />
+                <p class="callout">Distilling these findings for developers</p>
+              </div>
+            </div>
           </section>
         </section>
         <!-- /Gaps -->
