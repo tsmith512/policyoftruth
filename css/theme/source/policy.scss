@@ -466,6 +466,25 @@ div.col-three {
   }
 }
 
+.paperpair {
+  &:before {
+    font-size: 2em !important;
+    font-family:'icomoon';
+    color: lighten($navy, 10%);
+    content: '\e027';
+  }
+}
+
+
+.dialog {
+  &:before {
+    font-size: 2em !important;
+    font-family:'icomoon';
+    color: lighten($navy, 10%);
+    content: '\e06c';
+  }
+}
+
 
 /*********************************************
  * NAVIGATION CONTROLS

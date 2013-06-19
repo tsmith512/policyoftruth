@@ -341,6 +341,18 @@ div.col-three .last {
   color: #45576a;
   content: '\e05a'; }
 
+.paperpair:before {
+  font-size: 2em !important;
+  font-family: 'icomoon';
+  color: #45576a;
+  content: '\e027'; }
+
+.dialog:before {
+  font-size: 2em !important;
+  font-family: 'icomoon';
+  color: #45576a;
+  content: '\e06c'; }
+
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
