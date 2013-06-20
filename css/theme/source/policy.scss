@@ -381,6 +381,16 @@ div.col-three {
   }
 }
 
+.reveal h2.iconinline {
+  &:before {
+    font-size: 0.8em !important;
+    vertical-align: 0.1em;
+    line-height: 0;
+    margin-right: 0.25em;
+    color: $lime;
+  }
+}
+
 .draft-empty {
   &:before {
     font-family:'Acta Symbols W95 Office';
