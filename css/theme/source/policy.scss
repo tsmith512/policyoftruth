@@ -329,6 +329,14 @@ div.col-three {
   .last {
     border-left: 1px solid darken($navy, 5%);
   }
+  .middle-last {
+    width: 66.6% !important;
+    -webkit-flex: 2 0 0;
+    -moz-flex: 2 0 0;
+    -ms-flex: 2 0 0;
+    flex: 2 0 0;
+    border-left: 1px solid darken($navy, 5%);
+  }
 }
 
 /*********************************************
@@ -342,6 +350,13 @@ div.col-three {
   &.big:before {
     font-size: 4em !important;
     margin-bottom: 0.375em;
+    text-shadow: 2px 2px 0 darken($navy, 15%);
+  }
+
+  &.super:before {
+    font-size: 8em !important;
+    margin-top: 0.375em;
+    margin-bottom: 0.125em;
     text-shadow: 2px 2px 0 darken($navy, 15%);
   }
 
@@ -410,6 +425,13 @@ div.col-three {
   }
 }
 
+.compass {
+  &:before {
+    font-family:'Acta Symbols W95 Stars';
+    content: '4';
+  }
+}
+
 .number1 {
   &:before {
     font-family:'ActaSymbolsW95-Circles';
@@ -475,6 +497,14 @@ div.col-three {
   }
 }
 
+.homeoffice {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e003';
+  }
+}
+
 .paperpair {
   &:before {
     font-family:'icomoon';
@@ -488,6 +518,14 @@ div.col-three {
     font-family:'icomoon';
     font-size: 2em;
     content: '\e06c';
+  }
+}
+
+.book {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e01f';
   }
 }
 
