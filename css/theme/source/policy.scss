@@ -53,8 +53,8 @@ font-family:'ActaSymbolsW95-Weather';
 
 // Colors
 $navy: desaturate(#2b3d51, 10%);
-$steel: desaturate(#446181, 10%);
-$blue: desaturate(#6185a9, 10%);
+$steel: desaturate(#446181, 5%);
+$blue: saturate(#6185a9, 10%);
 $lime: #23cc6f;
 
 
@@ -102,7 +102,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 0.125em 0;
   color: white;
 
   font-family: 'UniversLTW01-49LightUlt', 'Arial Narrow', Impact, sans-serif;;
@@ -154,11 +154,16 @@ body {
  *********************************************/
 
 .reveal section img {
-  margin: 15px 0px;
+  display: block;
+  max-width: 100%;
+  max-height: 12em !important;
+
+  margin: 0 auto;
   background: rgba(255,255,255,0.12);
   border: 4px solid $mainColor;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
 
   -webkit-transition: all .2s linear;
      -moz-transition: all .2s linear;
@@ -186,6 +191,13 @@ body {
   }
 }
 
+.index-list p:not(.no-index) {
+  display: block;
+  padding-bottom: 0.25em;
+  border-bottom: 1px dotted darken($navy, 5%);
+  margin-bottom: 0.75em;
+}
+
 
 .reveal .slides>section,
 .reveal .slides>section>section {
@@ -199,7 +211,7 @@ body {
 .reveal blockquote {
   position: relative;
 
-  width: 90%;
+  width: 80%;
   margin: 0.5em auto;
   padding: 0.375em;
 
@@ -221,26 +233,26 @@ body {
   &:before {
     display: block;
     position: absolute;
-    left: -0.4em;
+    left: -0.5em;
     top: 0.325em;
     content:open-quote;
     font-size:4em;
     font-family: 'Georgia';
     line-height:0em;
     color: darken($navy, 5%);
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 0 darken($navy, 15%);
   }
   &:after {
     display: block;
     position: absolute;
-    right: -0.4em;
+    right: -0.5em;
     bottom: -0.25em;
     content:close-quote;
     font-size:4em;
     font-family: 'Georgia';
     line-height:0em;
     color: darken($navy, 5%);
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 0 darken($navy, 15%);
   }
 }
 
@@ -286,8 +298,8 @@ div.col-two, div.col-three {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
 
   .centered {
@@ -378,6 +390,16 @@ div.col-three {
     line-height: 0;
     margin-right: 0.5em;
     color: white;
+  }
+}
+
+.reveal h2.iconinline {
+  &:before {
+    font-size: 0.8em !important;
+    vertical-align: 0.1em;
+    line-height: 0;
+    margin-right: 0.25em;
+    color: $lime;
   }
 }
 

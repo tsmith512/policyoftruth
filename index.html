@@ -53,34 +53,33 @@
 
         <section>
           <h2>In this Presentation</h2>
-          <ul>
-            <li>
-              <strong><a href="#/workflow-lead">Workflow</a></strong> &mdash;
-              What is it? Why would I need it?
-            </li>
-            <li>
-              <strong>Case Studies</strong> &mdash; A tale of two <del>cities</del> <ins>sites</ins>
-              <a href="#/dor-lead">Stanford's <abbr title="Dean of Research">DoR</abbr></a> and
-              <a href="#/upo-lead">UTexas's <abbr title="University Policy Office">UPO</abbr></a>
-            </li>
-            <li>
-              <strong>Choosing Workbench &amp; Drupal</strong> &mdash;
-              <a href="#/drupal-lead">Why Drupal?</a>
-              <a href="#/workbench-lead">Why Workbench?</a>
-            </li>
-            <li>
-              <strong>Drupal, horseshoes &amp; hand grenades</strong> &mdash; lessons in making "close" count
-              <ul>
-                <li>
-                  <a href="#/gaps-lead">Overcoming Gaps</a> between requirements and capabilities
-                </li>
-                <li>
-                  <a href="#/challenges-lead">Specific challenges we faced</a> and how we solved them
-                  with Drupal, Workbench, custom code, and novel ideas</li>
-              </ul>
-            </li>
-          </ul>
+          <div class="col-two index-list">
+            <div class="col left centered">
+              <p>
+                <a href="#/workflow-lead">Workflow:</a><br />
+                What is it? Who needs it?
+              </p>
 
+              <p>
+                <strong>Case Studies</strong><br />
+                A tale of two <del>cities</del> <ins>sites</ins>:<br />
+                <a href="#/dor-lead">Stanford <abbr title="Dean of Research">DoR</abbr></a> &amp;
+                <a href="#/upo-lead">UTexas <abbr title="University Policy Office">UPO</abbr></a>
+              </p>
+
+              <p>
+                <strong>Choosing</strong><br /><a href="#/drupal-lead">Drupal</a>
+                and <a href="#/workbench-lead">Workbench</a>
+              </p>
+            </div>
+            <div class="col right centered">
+              <p class="no-index"><strong>Drupal, horseshoes &amp; hand grenades,</strong>
+              lessons in making "close" count:</p>
+              <p class="no-index"><a href="#/gaps-lead">Overcoming gaps</a> in requirements &amp; capabilities</p>
+              <p class="no-index"><a href="#/challenges-lead">Specific challenges</a> and solutions
+              leveraging Drupal, Workbench, custom code, and creativity</p>
+            </div>
+          </div>
         </section>
 
         <!-- Workflow Section -->
@@ -164,7 +163,10 @@
             </p>
             <div class="col-three">
               <div class="col first centered">
-                <p>A new office Affiliated with University Compliance Services,</p>
+                <p>
+                  A new Compliance Services
+                  <abbr title="UPO is affiliated with University Compliance Services">office</abbr>,
+                </p>
               </div>
               <div class="col middle centered">
                 <p>supported by the <abbr title="a.k.a. 'POAG', an elected council">
@@ -183,15 +185,14 @@
                 Handbook of Operating Procedures</abbr>.
               </li>
               <li>
-                <strong>Record history</strong> of changes, approvals, and effective dates
-                of Policy Documents therein.
+                <strong>Record history</strong> of changes, approvals, and effective dates.
               </li>
               <li>
                 <strong>Guide documents through a complex review</strong> process
                 engaging policy owners, sponsors, subject matter experts, and advisors.
               </li>
               <li>
-                Gather and <strong>compile stores</strong> of University policy outside of the H.O.P.
+                <strong>Assimilate stores</strong> of University policy outside of the HOP
               </li>
               <li>
                 <strong>Provide historical policy materials</strong> for dispute resolution.
@@ -200,37 +201,92 @@
           </section>
           <section>
             <h3>What did UPO need?</h3>
-            <ol>
-              <li>
-                Structural and visual overhaul of
-                <abbr title="Handbook of Operating Procedures">HOP</abbr>
-                web presentation
-              </li>
-              <li>
-                An escape from paper-based workflows and disjointed electronic tools that conforms with a newly minted policy review process
-              </li>
-              <li>
-                The ability to easily reference policy revisions, related support documents, meta-data, effective dates, and policy owners
-              </li>
-              <li>
-                A faster policy review process to keep the H.O.P current  (some review periods counted in years)
-              </li>
-              <li>
-                Tools to help the policy office and their constituents manage and track policy ownership and sponsorship
-              <li>
-                Easily engage <abbr title="Policy Office Advisory Group">POAG</abbr>
-                members and other policy review groups with minimal administrative overhead
-              </li>
-            </ol>
+            <div class="col-two">
+              <div class="col left">
+                <ol>
+                  <li>
+                    Unify and expedite a disjointed review process under a new workflow model
+                  </li>
+                  <li>
+                    Reference policy revisions, related documentation, and effective dates
+                  </li>
+                </ol>
+              </div>
+              <div class="col right">
+                <ol start="3">
+                  <li>
+                    Manage and track policy ownership and sponsorship
+                  </li>
+                  <li>
+                    Engage authors and moderators with minimal administrative overhead
+                  </li>
+                </ol>
+              </div>
+            </div>
           </section>
           <section>
-            <h3>A workflow model for UPO: where they started</h3>
-            <blockquote>
-              [[ Yep, need to draw this. Gonna do that. ]]
-            </blockquote>
+            <h3>A new model for UPO: the Command &amp; Control Frisbee</h3>
+            <img src="gfx/upo_workflow.png" alt="UPO Workflow Diagram" />
           </section>
         </section>
         <!-- /UPO -->
+
+        <!-- Client Relationship Section -->
+        <section>
+          <h2 class="static-title">Client Relationships for Complex Projects</h2>
+          <section id="understanding-1">
+            <h3>Going client-side</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <figure class="icon number1"><span>1.</span></figure><br />
+                <p class="callout">Diving into business logic and domain knowledge</p>
+              </div>
+              <div class="col right centered">
+                <figure class="icon number2"><span>2.</span></figure><br />
+                <p class="callout">Distilling these findings for developers</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Fostering understanding: making it real</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <figure class="icon paperpair"><span>Paperwork</span></figure><br />
+                <p>
+                  <strong>Paper-based prototypes</strong> inspired us to modify
+                  and extend Workbench for this &ldquo;routing&rdquo; style process.
+                </p>
+              </div>
+              <div class="col right centered">
+                <figure class="icon people"><span>Personas</span></figure><br />
+                <p>
+                  <strong>Personification</strong> using <em>The Jetsons</em>
+                  characters to illustrate roles, relationships, and permissions.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Fostering understanding: communication and demonstration</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <figure class="icon dialog"><span>Open Dialog</span></figure><br />
+                <p>
+                  <strong>Constant communication</strong> with clients about
+                  boundaries of the system, actual <em>and anticipated</em>.
+                </p>
+              </div>
+              <div class="col right centered">
+                <figure class="icon browser"><span>Clear Deliverables</span></figure><br />
+                <p>
+                  <strong>Clients think like they work</strong>; UPO preferred
+                  implementation over abstraction, complete features over drafts.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- /Client Relationships -->
 
         <!-- Drupal Section -->
         <section>
@@ -295,15 +351,15 @@
                 <figure class="icon inbox"><span>Revision in Inbox</span></figure>
                 <p class="callout">Moderation</p>
                 <p>
-                  Customizable, multi-stepped <strong>revision and approval
-                  workflow</strong> for publishing content.</p>
+                  Customizable <strong>revision and approval
+                  workflow</strong> with states between unpublished and published.</p>
               </div>
               <div class="col right centered">
                 <figure class="icon orgtree"><span>Organization Tree</span></figure>
                 <p class="callout">Access</p>
                 <p>
-                  <strong>Access based on editorial sections</strong> taken from
-                  hierarchical orgianizational structure.
+                  Node <strong>access based on permissions and membership</strong>
+                  in a hierarchical taxonomy or menu system.
                 </p>
               </div>
             </div>
@@ -343,7 +399,7 @@
               </div>
             </div>
           </section>
-          <section id="dor-lead">
+          <section>
             <h3 class="iconinline orgtree">Workbench Access: Stanford DoR</h3>
             <div class="col-two">
               <div class="col left centered">
@@ -378,15 +434,27 @@
             </div>
           </section>
           <section>
+            <h3 class="iconinline orgtree">Workbench solution: Stanford DoR</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <p class="callout">revisit previous slide</p>
+              </div>
+              <div class="col right">
+                &nbsp;
+              </div>
+            </div>
+          </section>
+          <section>
             <h3>Workbench worked for DoR. What about UPO?</h3>
             <div class="col-two">
               <div class="col left">
-                <p class="callout">Rehash UPO workflow figure</p>
+                <img src="gfx/upo_workflow.png" alt="UPO Workflow Diagram" />
               </div>
               <div class="col right">
                 <ul>
                   <li>Moderation and storage of revisions.</li>
                   <li>Access to &ldquo;Review Groups&rdquo; seemed doable?</li>
+                  <li>Unlike DoR, the UPO fribsee is not linear&hellip;</li>
                 </ul>
               </div>
             </div>
@@ -405,8 +473,7 @@
             <p>
               Leveraging other tools and APIs including ctools, panels,
               contexts, taxonomy, node permisssions, views, menus, and
-              (<abbr title="unfortunately">ultimately</abbr>) theming
-              filled the gaps.
+              theming filled the gaps.
             </p>
           </section>
           <section id="gaps-lead">
@@ -416,57 +483,6 @@
               novel configurations and customizations.
             </p>
           </section>
-          <section>
-            <h3>From CMS &rarr; Workflow Tool</h3>
-            <div class="col-two">
-              <div class="col left centered">
-                <figure class="icon number1"><span>1.</span></figure><br />
-                <p class="callout">Diving into business logic and domain knowledge</p>
-              </div>
-              <div class="col right centered">
-                <figure class="icon number2"><span>2.</span></figure><br />
-                <p class="callout">Distilling these findings for developers</p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3>Guiding the client: making it real</h3>
-            <div class="col-two">
-              <div class="col left centered">
-                <figure class="icon paperpair"><span>Paperwork</span></figure><br />
-                <p>
-                  <strong>Paper-based prototypes</strong> inspired us to modify
-                  and extend Workbench for this &ldquo;routing&rdquo; style process.
-                </p>
-              </div>
-              <div class="col right centered">
-                <figure class="icon people"><span>Personas</span></figure><br />
-                <p>
-                  <strong>Personification</strong> using <em>The Jetsons</em>
-                  characters to illustrate roles, relationships, and permissions.
-                </p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3>Guiding the client: communication and demonstration</h3>
-            <div class="col-two">
-              <div class="col left centered">
-                <figure class="icon dialog"><span>Open Dialog</span></figure><br />
-                <p>
-                  <strong>Constant communication</strong> with clients about
-                  boundaries of the system, actual <em>and anticipated</em>.
-                </p>
-              </div>
-              <div class="col right centered">
-                <figure class="icon browser"><span>Clear Deliverables</span></figure><br />
-                <p>
-                  <strong>Present to client comprehension</strong>; UPO preferred
-                  implementation over abstraction, complete features over drafts.
-                </p>
-              </div>
-            </div>
-          </section>
         </section>
         <!-- /Gaps and Complexity -->
 
@@ -474,7 +490,30 @@
         <section>
           <h2 class="static-title">Challenges &amp; Solutions</h2>
           <section id="challenges-lead">
-            <h3 class="iconinline number1">Highly variable workflow</h3>
+            <div class="col-three index-list">
+              <div class="col first centered">
+                <figure class="icon number1"><span>1.</span></figure><br />
+                <p><a href="#/workflow-challenge">Variable Workflow</a></p>
+                <figure class="icon number2"><span>2.</span></figure><br />
+                <p><a href="#/dashboard-challenge">Better Dashboard</a></p>
+                <figure class="icon number3"><span>3.</span></figure><br />
+                <p><a href="#/permissions-challenge">Managing Permissions</a></p>
+              </div>
+              <div class="col middle centered">
+                <figure class="icon number4"><span>4.</span></figure><br />
+                <p><a href="#/supportingdocs-challenge">Supporting Documentation</a></p>
+                <figure class="icon number5"><span>5.</span></figure><br />
+                <p><a href="#/history-challenge">Recording History</a></p>
+              </div>
+              <div class="col last centered">
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2 class="iconinline number1">Highly variable workflow</h2>
+          <section id="workflow-challenge">
+            <h3>Overview</h3>
             <div class="col-three">
               <div class="col first centered">
                 <figure class="icon super compass"><span>Compass Rose</span></figure>
@@ -493,7 +532,20 @@
             </div>
           </section>
           <section>
-            <h3 class="iconinline number2">&ldquo;My Workbench&rdquo; dashboard inadequate</h3>
+            <h3>&ldquo;Moderating&rdquo; with Access</h3>
+            <p>the frisbee</p>
+          </section>
+          <section>
+            <h3>Workflow Checklist: a routing sheet</h3>
+          </section>
+          <section>
+            <h3>Using Moderation states to trigger, not govern, the worfklow</h3>
+          </section>
+        </section>
+        <section>
+          <h2 class="iconinline number2">&ldquo;My Workbench&rdquo; dashboard inadequate</h2>
+          <section id="dashboard-challenge">
+            <h3>Overview</h3>
             <div class="col-three">
               <div class="col first centered">
                 <br /><br />
@@ -513,7 +565,70 @@
             </div>
           </section>
           <section>
-            <h3 class="iconinline number3">Needed full history of policies</h3>
+            <h3>Actions Needed: review instructions</h3>
+            <p>WB Dash is state-based, not access based.</p>
+          </section>
+          <section>
+            <h3>Organize by user/business roles, not Moderation states</h3>
+          </section>
+          <section>
+            <h3>My Portfolio: management of published documents</h3>
+          </section>
+        </section>
+        <section>
+          <h2 class="iconinline number3">MANAGING PERMISSIONS</h2>
+          <section id="permissions-challenge">
+            <h3>Overview</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <figure class="icon super draft-locked"><span>Read Only</span></figure>
+              </div>
+              <div class="col middle-last">
+                <p>
+                </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
+                <p>
+                  recorded consistently and was extrapolated on installation.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Owner / sponsor oversight</h3>
+          </section>
+          <section>
+            <h3>User management though taxonomy</h3>
+          </section>
+          <section>
+            <h3>Delegation</h3>
+          </section>
+          <section>
+            <h3>Read-only reviews</h3>
+          </section>
+        </section>
+        <section>
+          <h2 class="iconinline number4">SUPPORTING DOCUMENTATION</h2>
+          <section id="supportingdocs-challenge">
+            <h3>Overview</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <br /><br />
+                <figure class="icon big book"><span>History Book</span></figure>
+              </div>
+              <div class="col middle-last">
+                <p>
+                </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
+                <p>
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2 class="iconinline number5">Needed full history of policies</h2>
+          <section id="history-challenge">
+            <h3>Overview</h3>
             <div class="col-three">
               <div class="col first centered">
                 <br /><br />
@@ -526,110 +641,9 @@
                 </p>
                 <figure class="icon chevron-down centered"><span>Solution:</span></figure>
                 <p>
-                  <strong>Active Policy Locator</strong> and <strong>HOP History</strong>
-                  views were built to display this history. Necessary metadata is
+                  <strong>HOP History</strong>
+                  view was built to display this history. Necessary metadata is
                   recorded consistently and was extrapolated on installation.
-                </p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3 class="iconinline number4">Delegate participation</h3>
-            <div class="col-three">
-              <div class="col first centered">
-                <br /><br />
-                <figure class="icon big people"><span>Groups</span></figure>
-              </div>
-              <div class="col middle-last">
-                <p>
-                  Many Policy Sponsors and some Policy Owners are department
-                  leaders who will want to delegate site usage.
-                </p>
-                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
-                <p>
-                  Implemented <strong>Review Group</strong>, a taxonomy of user
-                  groups to which documents could be assigned.
-                </p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3 class="iconinline number5">Owners and Sponsors need to oversee documents</h3>
-            <div class="col-three">
-              <div class="col first centered">
-                <br /><br />
-                <figure class="icon big binoculars"><span>Watching</span></figure>
-              </div>
-              <div class="col middle-last">
-                <p>
-                  Even when documents are outside of an Owner&apos;s or
-                  Sponsor&apos;s review group, they need access.
-                </p>
-                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
-                <p>
-                  Used custom <strong>CTools Access</strong> to restore draft-view
-                  and draft-edit permissions based on node Review Group associations.
-                </p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3 class="iconinline number6">Many Review Groups are read-only</h3>
-            <div class="col-three">
-              <div class="col first centered">
-                <figure class="icon super draft-locked"><span>Read-Only</span></figure>
-              </div>
-              <div class="col middle-last">
-                <p>
-                  Workbench assumes anyone with access to view a draft can edit it.
-                  Most groups should not have edit access; they review and comment. 
-                </p>
-                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
-                <p>
-                  Custom <strong>Node Access</strong> checks were written to
-                  restrict editing to Owners, Legal Services, and UPO Admins.
-                </p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3 class="iconinline number7">Policies are replacable</h3>
-            <div class="col-three">
-              <div class="col first centered">
-                <br /><br />
-                <figure class="icon big stacked"><span>Replacement</span></figure>
-              </div>
-              <div class="col middle-last">
-                <p>
-                  Multiple Policy Document nodes may be substituted in/out of the
-                  <abbr title="Handbook of Operating Procedures">HOP</abbr> for a
-                  specific record.
-                </p>
-                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
-                <p>
-                  <strong>Book Module</strong> structures HOP Sections and Chapters
-                  with a simple node type. Policy nodes are matched as subpages of
-                  Chapters, ordered by weight. All HOP-specific views are aware.
-                </p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3 class="iconinline number8">Time-limits on review period</h3>
-            <div class="col-three">
-              <div class="col first centered">
-                <figure class="icon super timeout"><span>Hourglass</span></figure>
-              </div>
-              <div class="col middle-last">
-                <p>
-                  <abbr title="Policy Office Advisory Group">POAG</abbr> (and
-                  others?) should be given an automatically enforced deadline.
-                </p>
-                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
-                <p>
-                  Optional deadline can specified for any document movement.
-                  <strong>Cron</strong> will trigger a Workbench Access change to
-                  return the document to UPO.
                 </p>
               </div>
             </div>
@@ -641,6 +655,7 @@
         <section>
           <h2 class="static-title">Policy of Truth Summary</h2>
           <section>
+            <h3>Tellin&apos; what we told &apos;em, as we learned in English class&hellip;</h3>
             <div class="col-three">
               <div class="col first centered">
                 <figure class="icon number1"><span>1.</span></figure>
@@ -662,12 +677,13 @@
                 <p>
                   <a href="#/workbench-lead">Workbench</a> extends
                   <a href="#/drupal-lead">Drupal's</a> content modeling
-                  with granulated revision management.
+                  for revision management.
                 </p>
               </div>
             </div>
             <p class="callout">
-              Novel ideas and deep business knowledge <a href="#/challenges-lead">tackle challenges</a>.
+              Novel ideas and <a href="#/understanding-1">deep business understanding</a>
+              help to <a href="#/challenges-lead">tackle challenges</a>.
             </p>
           </section>
           <section class="centered">
