@@ -53,8 +53,8 @@ font-family:'ActaSymbolsW95-Weather';
 
 // Colors
 $navy: desaturate(#2b3d51, 10%);
-$steel: desaturate(#446181, 10%);
-$blue: desaturate(#6185a9, 10%);
+$steel: desaturate(#446181, 5%);
+$blue: saturate(#6185a9, 10%);
 $lime: #23cc6f;
 
 
@@ -186,7 +186,7 @@ body {
   }
 }
 
-.index-list p {
+.index-list p:not(.no-index) {
   display: block;
   padding-bottom: 0.25em;
   border-bottom: 1px dotted darken($navy, 5%);

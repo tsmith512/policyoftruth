@@ -49,7 +49,7 @@ font-family:'ActaSymbolsW95-Weather';
  *********************************************/
 body {
   background: #313d4b;
-  color: #7f94ac; }
+  color: #7a94b1; }
 
 .reveal {
   font-family: 'UniversLTW01-47LightCn', sans-serif;
@@ -61,7 +61,7 @@ body {
     color: white; }
 
 ::selection {
-  background: #b9c5d0;
+  background: #aec5dc;
   color: #313d4b;
   text-shadow: none; }
 
@@ -87,7 +87,7 @@ body {
 .reveal h2 {
   text-align: left;
   color: #23cc6f;
-  border-bottom: 0.125em solid #3a4858; }
+  border-bottom: 0.125em solid #36485c; }
 
 /*********************************************
  * LINKS
@@ -137,7 +137,7 @@ body {
   .reveal .slides section.centered {
     text-align: center; }
 
-.index-list p {
+.index-list p:not(.no-index) {
   display: block;
   padding-bottom: 0.25em;
   border-bottom: 1px dotted #27313b;
@@ -148,7 +148,7 @@ body {
   padding: 0; }
 
 .reveal abbr {
-  border-bottom: 1px dotted #4e6177; }
+  border-bottom: 1px dotted #49617c; }
 
 .reveal blockquote {
   position: relative;
@@ -160,7 +160,7 @@ body {
   border-top-width: 2px;
   border-bottom-width: 3px;
   background: #27313b;
-  color: #9eaec0;
+  color: #9aaec4;
   box-shadow: 0px 0px 15px #27313b;
   text-align: center;
   font-family: 'Museo W01 100';
@@ -198,7 +198,7 @@ body {
   font-size: 0.75em; }
 
 .reveal .callout {
-  color: #5585b5;
+  color: #3c85ce;
   font-family: 'Museo W01 300 Italic';
   font-size: 1.25em;
   text-align: center;
@@ -303,7 +303,7 @@ div.col-three .middle-last {
 .draft-empty:before {
   font-family: 'Acta Symbols W95 Office';
   content: '0';
-  color: #6d859d; }
+  color: #5585b5; }
 
 .draft-first:before {
   font-family: 'Acta Symbols W95 Office';
