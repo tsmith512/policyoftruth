@@ -471,6 +471,7 @@
                   Creation, review, and publication of policies and supplemental
                   documentation varies case-by-case.
                 </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
                 <p>
                   Designed &ldquo;routing sheet&rdquo; content type, the
                   <strong>Workflow Checklist</strong>, to record this traffic.
@@ -490,6 +491,7 @@
                   Workbench provided dashboard is meant for linear progress up to
                   final publication for individual authors.
                 </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
                 <p>
                   Designed <strong>Policy Dashboard</strong> with group- and
                   role-specific views of drafted, published, and in-review documents.
@@ -506,12 +508,115 @@
               </div>
               <div class="col middle-last">
                 <p>
-                  Workbench provided dashboard is meant for linear progress up to
-                  final publication for individual authors.
+                  All review cycles, revisions, and status dates must be recorded
+                  and easily referenced (including pre-Workbench).
                 </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
                 <p>
-                  Designed <strong>Policy Dashboard</strong> with group- and
-                  role-specific views of drafted, published, and in-review documents.
+                  <strong>Active Policy Locator</strong> and <strong>HOP History</strong>
+                  views were built to display this history. Necessary metadata is
+                  recorded consistently and was extrapolated on installation.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3 class="iconinline number4">Delegate participation</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <br /><br />
+                <figure class="icon big people"><span>Groups</span></figure>
+              </div>
+              <div class="col middle-last">
+                <p>
+                  Many Policy Sponsors and some Policy Owners are department
+                  leaders who will want to delegate site usage.
+                </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
+                <p>
+                  Implemented <strong>Review Group</strong>, a taxonomy of user
+                  groups to which documents could be assigned.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3 class="iconinline number5">Owners and Sponsors need to oversee documents</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <br /><br />
+                <figure class="icon big binoculars"><span>Watching</span></figure>
+              </div>
+              <div class="col middle-last">
+                <p>
+                  Even when documents are outside of an Owner&apos;s or
+                  Sponsor&apos;s review group, they need access.
+                </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
+                <p>
+                  Used custom <strong>CTools Access</strong> to restore draft-view
+                  and draft-edit permissions based on node Review Group associations.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3 class="iconinline number6">Many Review Groups are read-only</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <figure class="icon super draft-locked"><span>Read-Only</span></figure>
+              </div>
+              <div class="col middle-last">
+                <p>
+                  Workbench assumes anyone with access to view a draft can edit it.
+                  Most groups should not have edit access; they review and comment. 
+                </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
+                <p>
+                  Custom <strong>Node Access</strong> checks were written to
+                  restrict editing to Owners, Legal Services, and UPO Admins.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3 class="iconinline number7">Policies are replacable</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <br /><br />
+                <figure class="icon big stacked"><span>Replacement</span></figure>
+              </div>
+              <div class="col middle-last">
+                <p>
+                  Multiple Policy Document nodes may be substituted in/out of the
+                  <abbr title="Handbook of Operating Procedures">HOP</abbr> for a
+                  specific record.
+                </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
+                <p>
+                  <strong>Book Module</strong> structures HOP Sections and Chapters
+                  with a simple node type. Policy nodes are matched as subpages of
+                  Chapters, ordered by weight. All HOP-specific views are aware.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3 class="iconinline number8">Time-limits on review period</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <figure class="icon super timeout"><span>Hourglass</span></figure>
+              </div>
+              <div class="col middle-last">
+                <p>
+                  <abbr title="Policy Office Advisory Group">POAG</abbr> (and
+                  others?) should be given an automatically enforced deadline.
+                </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
+                <p>
+                  Optional deadline can specified for any document movement.
+                  <strong>Cron</strong> will trigger a Workbench Access change to
+                  return the document to UPO.
                 </p>
               </div>
             </div>

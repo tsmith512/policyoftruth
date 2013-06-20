@@ -347,6 +347,10 @@ div.col-three {
 
   span { display: none; }
 
+  &.centered {
+    display: block !important;
+  }
+
   &.big:before {
     font-size: 4em !important;
     margin-bottom: 0.375em;
@@ -409,6 +413,13 @@ div.col-three {
   }
 }
 
+.draft-locked {
+  &:before {
+    font-family:'Acta Symbols W95 Office';
+    content: 'B';
+  }
+}
+
 .browser {
   &:before {
     font-family:'Acta Symbols W95 Office';
@@ -422,6 +433,26 @@ div.col-three {
     font-size: 1.5em !important;
     vertical-align: 0.375em;
     content: 'B';
+  }
+}
+
+.chevron-down {
+  margin-bottom: -0.375em !important;
+  &:before {
+    margin: 0 0.075em;
+    font-family:'Acta Symbols W95 Arrows';
+    font-size: 1.5em !important;
+    vertical-align: 0.375em;
+    content: 'v';
+  }
+}
+
+.timeout {
+  &:before {
+    font-family:'Acta Symbols W95 Time';
+    font-size: 1.5em !important;
+    vertical-align: 0.375em;
+    content: 'd';
   }
 }
 
@@ -453,6 +484,46 @@ div.col-three {
     font-family:'ActaSymbolsW95-Circles';
     font-size: 2em;
     content: '3';
+  }
+}
+
+.number4 {
+  &:before {
+    font-family:'ActaSymbolsW95-Circles';
+    font-size: 2em;
+    content: '4';
+  }
+}
+
+.number5 {
+  &:before {
+    font-family:'ActaSymbolsW95-Circles';
+    font-size: 2em;
+    content: '5';
+  }
+}
+
+.number6 {
+  &:before {
+    font-family:'ActaSymbolsW95-Circles';
+    font-size: 2em;
+    content: '6';
+  }
+}
+
+.number7 {
+  &:before {
+    font-family:'ActaSymbolsW95-Circles';
+    font-size: 2em;
+    content: '7';
+  }
+}
+
+.number8 {
+  &:before {
+    font-family:'ActaSymbolsW95-Circles';
+    font-size: 2em;
+    content: '8';
   }
 }
 
@@ -526,6 +597,22 @@ div.col-three {
     font-family:'icomoon';
     font-size: 2em;
     content: '\e01f';
+  }
+}
+
+.binoculars {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e07e';
+  }
+}
+
+.stacked {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e02d';
   }
 }
 
