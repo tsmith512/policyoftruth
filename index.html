@@ -658,7 +658,7 @@
             </div>
           </section> 
           <section>
-            <h3>Challenge Solved</h3>
+            <h3>Solution</h3>
             <div class="col-three">
               <div class="col first centered">
                 <figure class="icon super compass"><span>Compass Rose</span></figure>
@@ -689,7 +689,7 @@
               </div>
               <div class="col middle-last">
                 <p class="callout">
-                  The system and the policy review process is brand new. <strong>How will users know what to do?</strong>
+                  The system and the policy review process are brand new. <strong>How will users know what to do?</strong>
                 </p>
               </div>
             </div>
@@ -776,7 +776,7 @@
             </ul>
           </section>
           <section>
-            <h3>Challenge Solved</h3>
+            <h3>Solution</h3>
             <div class="col-three">
               <div class="col first centered">
                 <br /><br />
@@ -806,71 +806,96 @@
                 <figure class="icon super draft-locked"><span>Read Only</span></figure>
               </div>
               <div class="col middle-last">
-                <p>Policy editing capabilities need tight management, draft visibility should make business 
-                sense, managing access and permissions should be simple, workflow tasks must be delegate-able.</p>
+                <p class="callout">
+                  Needed easily managed permissions with restrictive editing rights,
+                  business-relevant viewing ability, and delegation-friendly.
+                </p>
               </div>
             </div>
           </section>
           <section>
-            <h3>Moderation: Recommended configuration didn't work here</h3>
-            <p><a href="https://drupal.org/node/1175592">Recommended permission settings</a> for moderation posed management, security, 
-                   and business challenges.
+            <h3>Moderation: recommended configuration didn't work here</h3>
+            <p>
+              <a href="https://drupal.org/node/1175592" title="Workbench Modeation configuration recommendations">
+              Recommended permission settings</a> for Moderation posed management,
+              security, and business challenges:
             </p>
             <ul>
-              <li>No concept of a non-editing reviewer editors, moderators and publishers all need "edit any content type"</li>
-              <li>Review roles can see all moderation messages but policy is a sensitive/legal space</li>
-              <li>Users with multiple roles have too much power in some capacities</li>
-              <li>Suited to linear and hierarchical flow/access scheme - not as-needed variable workflow</li>
+              <li>Suited to linear and hierarchical flow/access scheme.</li>
+              <li>Moderators and publishers all given "edit any content type."</li>
+              <li>Node moderation messages are visible to all.</li>
+              <li>Users with multiple roles receive too many permissions.</li>
+              <li>Lacks <em>non-editing</em> reviewer role.</li>
             </ul>
           </section>
           <section>
             <h3>Access: Other issues</h3>
             <ul>
-              <li>Administration of access can be opaque - needs to be dead simple</li>
-              <li>Need to honor and protect policy portfolios and allow delegation within portfolios</li>
-              <li>Taxonomy traversal prevented access by policy stakeholders when out of their taxonomy</li>   
+              <li>Administration of access can be opaque - needs to be simple</li>
+              <li>Need to honor portfolios and allow delegation within them</li>
+              <li>
+                Taxonomy traversal prevented access by owners/sponsors when node
+                was out of their review group (taxonomy term).
+              </li>
             </ul>
           </section>
           <section>
-            <h3>Solving Permission Problems Differently</h3>
+            <h3>Alternative Solutions for Permissions</h3>
             <ul>
               <li>Did not grant "edit any content"</li>
-              <li>Custom CTOOLS-based access plugins that interpreted taxonomy traversal
+              <li>Custom Ctools access plugins to interpret taxonomy traversal:
                 <ul>
-                  <li>Augmented workbench node access restrictions with taxonomy traversal sensitive plugin.</li>
-                  <li>As a result, nodes in unpublished state in workflow could now be seen by non-editors</li>
-                  <li>Also used for panels pane visibility and restricting auxiliary node access in relation to taxonomy traversal</li>
-                  <li>Used outside of CTOOLs spaces by defining contexts and mocking CTOOLs</li>
-                  <li>Combined with taxonomy references on policy nodes provided taxonomy access exceptions for stakeholders</li>
+                  <li>Augmented workbench node access restrictions</li>
+                  <li>Allowed non-editors to view unpublished content</li>
+                  <li>Used for Panels pane visibility</li>
+                  <li>Restricted auxiliary node access relative to traversal</li>
+                  <li>Defined contexts for use outside Ctools spaces</li>
+                  <li>
+                    Taxonomy references on policy nodes provided access exceptions
+                    for stakeholders (owners and sponsors).
+                  </li>
                 </ul>
               </li>
             </ul>
-            <p>* Workbench Moderation 2 has switched to a CTOOLs based permission handling.</p>
+            <p class="note">
+              <strong>*</strong> Workbench Moderation 7.x-2.x has switched to a
+              Ctools based permission handling.
+            </p>
           </section>
           <section>
-            <h3>Solving Permission Problems Differently</h3>
-            <p>Simplified permission management</p>
+            <h3>Alternative Solutions for Permissions</h3>
+            <p>Simplified permission management:</p>
             <ul>
-              <li>Chose a proliferation of taxonomy terms over a proliferation of Roles and permissions</li>
-              <li>Permission changes within roles would be rare - reducing error</li>
+              <li>Management via proliferation of taxonomy terms, not roles</li>
+              <li>Rarely need to change permissions of roles &rarr; reduce errors</li>
               <li>Add individuals to taxonomy terms by the user not role</li>
-              <li>Taxonomy is organized by role but empty at that level, child taxonomy terms house users and their delegates</li>
-              <li>Nodes have taxonomy references for sponsor and owner so that all members of a taxonomy can be delegates.</li>
+              <li>Add users to taxonomy terms individually, not per role</li>
+              <li>
+                Taxonomy is <em>organized</em> by business-role but empty at
+                that level; child taxonomy terms house users and their delegates.
+              </li>
+              <li>
+                Nodes have term references for owner and sponsor groups &rarr;
+                all term members can be delegates.
+              </li>
             </ul>
           </section>
           <section>
-            <h3>Overview</h3>
+            <h3>Solution</h3>
             <div class="col-three">
               <div class="col first centered">
                 <figure class="icon super draft-locked"><span>Read Only</span></figure>
               </div>
               <div class="col middle-last">
-                <p>Policy editing capabilities need tight management, draft visibility should make business 
-                sense, managing access and permissions should be simple, workflow tasks must be delegatable.</p>
+                <p>
+                  Needed delegation-friendly permission management to restrict
+                  editing and viewing ability.
+                </p>
                 <figure class="icon chevron-down centered"><span>Solution:</span></figure>
-                <p>Chose more restrictions through custom permissions and node access augmentation, simplified management
-                 through a proliferation of terms over roles, created workbench taxonomy term references to allow key term groups 
-                 oversight capabilities on policy nodes.
+                <p>
+                  Custom permissions and node access augmentation, managed via
+                  terms instead of roles. Matching references on nodes permit
+                  exceptions.
                 </p>
               </div>
             </div>
@@ -933,7 +958,7 @@
               Novel ideas and <a href="#/understanding-lead">deep business understanding</a>
               help to <a href="#/challenges-lead">tackle challenges</a>.
             </p>
-            <p style="font-size: 0.75em; text-align: center;">
+            <p class="note">
               <a href="http://twitter.com/beautyhammer" title="Follow David Diers on Twitter">@beautyhammer</a>
               &amp; <a href="http://twitter.com/tsmith512" title="Follow Taylor Smith on Twitter">@tsmith512</a>
               of <a href="http://twitter.com/fourkitchens" title="Follow Four Kitchens on Twitter">@fourkitchens</a>
