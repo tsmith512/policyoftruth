@@ -42,7 +42,6 @@ $steel: desaturate(#446181, 5%);
 $blue: saturate(#6185a9, 10%);
 $lime: #23cc6f;
 
-
 $linkColor: $lime;
 $linkColorHover: lighten( $lime, 20% );
 $mainFontSize: 2.5em;
@@ -57,6 +56,7 @@ body {
   background: $navy;
   color: lighten($steel, 20%);
 }
+
 
 .reveal {
   font-family: 'UniversLTW01-47LightCn', sans-serif;
