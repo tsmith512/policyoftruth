@@ -658,7 +658,7 @@
             </div>
           </section> 
           <section>
-            <h3>Overview</h3>
+            <h3>Challenge Solved</h3>
             <div class="col-three">
               <div class="col first centered">
                 <figure class="icon super compass"><span>Compass Rose</span></figure>
@@ -689,28 +689,63 @@
               </div>
               <div class="col middle-last">
                 <p>
-                  Workbench provided dashboard is meant for linear progress up to
-                  final publication for individual authors.
-                </p>
-                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
-                <p>
-                  Designed <strong>Policy Dashboard</strong> with group- and
-                  role-specific views of drafted, published, and in-review documents.
+                  The system and the policy review process is brand new &emdash; <strong></strong>How will users know what to do?</strong>
                 </p>
               </div>
             </div>
           </section>
           <section>
-            <h3>Actions Needed: review instructions</h3>
-            <p>WB Dash is state-based, not access based.</p>
+            <h3>No existing dashboard really helped here (pt 1)</h3>
+            <h4>Conceptual Divergence</h4>
+            <ul>
+              <li>Non-WB: are not workflow aware</li>
+              <li>WB: are Passive and state-based not actions based</li>
+              <li>WB: does not provide role-based context</li>
+            </ul>
           </section>
           <section>
-            <h3>Organize by user/business roles, not Moderation states</h3>
+            <h3>No existing dashboard really helped here (pt 2)</h3>
+            <h4>Specific local needs</h4>
+            <ul>
+              <li>Create and express owner and sponsor policy portfolios of published policies not in workflow</li>
+              <li>Expose and relate support and workflow helper nodes to policies in workflow</li>
+              <li>Associate related policy features to help manage and understand policies for admins and content creators     </ul>
           </section>
           <section>
-            <h3>My Portfolio: management of published documents</h3>
+            <h3>So... We created a site specific Policy Dashboard</h3>
+            <p>Used views, custom pages (hook_menu), custom queries (db tng), and custom views relations and filters.</p>
+            <ul>
+              <li>That guides users through the new process and software</li>
+              <li>Dashboard responds to a user's role(s)</li>
+              <li>Surfaced actions needed, the capacity/role the action requires, as well as the policy's
+              workbench state</li>
+              <li>Using user reference created policy portfolios for owners and sponsors for policy upkeep</li>
+              <li>Provided quick access to other auxilliary tools such as policy revision history, GA stats, CSV exports, public comments</li>
+            </ul>
+          </section>
+          <section id="dashboard-challenge">
+            <h3>Challenge Solved</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <br /><br />
+                <figure class="icon big homeoffice"><span>Home</span></figure>
+              </div>
+              <div class="col middle-last">
+                <p>
+                  The system and the policy review process is brand new &emdash;
+  
+                  <strong>How will users know what to do?</strong>
+                </p>
+                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
+                <p>
+                  Provided new specific <strong>Policy Dashboard</strong> that honors workflow context, multiple roles,
+                  guides users through new process and software and provides portfolio management.
+                </p>
+              </div>
+            </div>
           </section>
         </section>
+        
         <section>
           <h2 class="iconinline number3">Complex Permission Requirements</h2>
           <section id="permissions-challenge">
