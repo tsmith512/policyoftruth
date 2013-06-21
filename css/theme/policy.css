@@ -98,10 +98,17 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
+.reveal .imgcap {
+  font-family: 'Museo W01 100 Italic';
+  font-size: 0.625em; }
+
+.reveal section .imgcap + img {
+  max-height: 10em !important; }
+
 .reveal section img {
   display: block;
   max-width: 100%;
-  max-height: 12em !important;
+  max-height: 12em;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.12);
   border: 4px solid #eeeeee;
