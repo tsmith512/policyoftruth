@@ -252,6 +252,13 @@ div.col-three .middle {
   border-left: 1px solid #27313b; }
 div.col-three .last {
   border-left: 1px solid #27313b; }
+div.col-three .first-middle {
+  width: 66.6% !important;
+  -webkit-flex: 2 0 0;
+  -moz-flex: 2 0 0;
+  -ms-flex: 2 0 0;
+  flex: 2 0 0;
+  border-right: 1px solid #3b4a5a; }
 div.col-three .middle-last {
   width: 66.6% !important;
   -webkit-flex: 2 0 0;
@@ -436,6 +443,11 @@ div.col-three .middle-last {
   font-family: 'icomoon';
   font-size: 2em;
   content: '\e003'; }
+
+.house:before {
+  font-family: 'icomoon';
+  font-size: 2em;
+  content: '\e000'; }
 
 .paperpair:before {
   font-family: 'icomoon';
