@@ -41,7 +41,7 @@
 
         <section class="centered">
           <h1>Policy of Truth*</h1>
-          <p class="callout">Workbench (Moderation and Access) for basic and 
+          <p class="callout">Workbench (Moderation and Access) for basic and
             complex Workflows in Drupal</p>
           <p>
             <a href="http://twitter.com/beautyhammer" title="Follow David Diers on Twitter">@beautyhammer</a>
@@ -102,7 +102,7 @@
           <section>
             <h3>Another more abstract take</h3>
             <blockquote>
-              Workflow comes down to just two ideas: that there is work to do, which a workflow 
+              Workflow comes down to just two ideas: that there is work to do, which a workflow
               sees as opaque units of behavior; and flow, which describes what work gets done when
 
               <div class="attribution">
@@ -111,27 +111,7 @@
             </blockquote>
           </section>
           <section>
-            <h3>Double Workflow: what does it mean?</h3>
-            <p>For our purposes it is kind of both.</p>
-          </section>
-          <section>
-            <h3>An example: the foodie blogger - iateitbeforeyoudid.com</h3>
-            <div class="col-two">
-              <div class="col left centered">
-                <br />
-                <figure class="icon big person"><span>Single Author</span></figure>
-                <p class="callout">Sole Contributor</p>
-              </div>
-              <div class="col right">
-                <ol>
-                  <li>Author creates and revises their own unpublished content (i.e. a blog post about tripe b&aacute;nh m&igrave;)</li>
-                  <li>Author publishes the content.</li>
-                </ol>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3>Another example: small news website</h3>
+            <h3>Simple example: foodie blogger - iateitbeforeyoudid.com</h3>
             <div class="col-two">
               <div class="col left centered">
                 <br />
@@ -140,7 +120,7 @@
               </div>
               <div class="col right">
                 <ol>
-                  <li>Contributors create / revise unpublished content</li>
+                  <li>Author creates and revises their own unpublished content (i.e. a blog post about tripe banh mi)</li>
                   <li>Contributors signals Editors to review</li>
                   <li>
                     Editor may&hellip;
@@ -610,7 +590,7 @@
               </div>
               <div class="col middle-last">
                 <ul>
-                  <li>Taxonomy-based Workbench Access scheme mirrored UPO constituents</li>  
+                  <li>Taxonomy-based Workbench Access scheme mirrored UPO constituents</li>
                   <li>Role permissions + taxonomy traversal &rarr; capabilities are as-needed</li>
                   <li>Few, simple Moderation states: Draft, In Review, Published</li>
                 </ul>
@@ -656,7 +636,7 @@
                 </ul>
               </div>
             </div>
-          </section> 
+          </section>
           <section>
             <h3>Solution</h3>
             <div class="col-three">
@@ -679,7 +659,7 @@
           </section>
         </section>
         <section>
-          <h2 class="iconinline number2">&ldquo;My Workbench&rdquo; dashboard inadequate</h2>
+          <h2 class="iconinline number2">Better Dashboard</h2>
           <section id="dashboard-challenge">
             <h3>Overview</h3>
             <div class="col-three">
@@ -796,7 +776,7 @@
             </div>
           </section>
         </section>
-        
+
         <section>
           <h2 class="iconinline number3">Complex Permission Requirements</h2>
           <section id="permissions-challenge">
@@ -807,8 +787,8 @@
               </div>
               <div class="col middle-last">
                 <p class="callout">
-                  Needed easily managed permissions with restrictive editing rights,
-                  business-relevant viewing ability, and delegation-friendly.
+                  Needed easily managed permissions with restricted editing rights,
+                  stakeholder access through draft process, and delegation.
                 </p>
               </div>
             </div>
@@ -888,8 +868,8 @@
               </div>
               <div class="col middle-last">
                 <p>
-                  Needed delegation-friendly permission management to restrict
-                  editing and viewing ability.
+                  Needed easily managed permissions with restricted editing rights,
+                  stakeholder access through draft process, and delegation.
                 </p>
                 <figure class="icon chevron-down centered"><span>Solution:</span></figure>
                 <p>
@@ -901,9 +881,48 @@
             </div>
           </section>
         </section>
-        <section>
-          <h2 class="iconinline number5">Needed full history of policies</h2>
+        <!-- <section>
+          <h2 class="iconinline number4">Comprehensive history of policies</h2>
           <section id="history-challenge">
+            <h3>Overview</h3>
+            <div class="col-three">
+              <div class="col first centered">
+                <br /><br />
+                <figure class="icon big book"><span>History Book</span></figure>
+              </div>
+              <div class="col middle-last">
+                <p>
+                  All review cycles, revisions, and status dates must be recorded
+                  and easily referenced (including pre-Workbench).
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>That all depends on what "history" means</h3>
+            <p>Key problems</p>
+            <ul>
+              <li>Access transitions are stateless and vid-less</li>
+              <li>Auxilliary and support nodes increased complexity</li>
+              <li>Views is not your friend here</li>
+              <li>Combining existing node revision history with workbench moderation history is difficult</li>
+              <li>Extended to other events - like public comments, abandoned and unapproved workflows, edits made outside of workflow
+                (in draft state)
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Dirty Old Tricks</h3>
+            <p>Have a set of data that conforms (or you can force) into a like number of columns?</p>
+            <p>Need to sort by a commonly shared column? (i.e. timestamp)</p>
+            <p>Sounds like a job for UNION</p>
+            <ul>
+              <li>Use UNION to present disparate data in one table</li>
+              <li>Policy comments, workbench moderation history, helper node moderation notes, discussions, and support document history all in one comprehensive table.</li>
+              <li>Immense queries can still be fast - if you keep them simple</li>
+            </ul>
+          </section>
+          <section>
             <h3>Overview</h3>
             <div class="col-three">
               <div class="col first centered">
@@ -918,46 +937,54 @@
                 <figure class="icon chevron-down centered"><span>Solution:</span></figure>
                 <p>
                   <strong>HOP History</strong>
-                  view was built to display this history. Necessary metadata is
-                  recorded consistently and was extrapolated on installation.
+                  Custom UNION query unifies vastly disparate data in one paginated table which greatly extends what is available in the node revision/moderation tab of a node.
                 </p>
               </div>
             </div>
           </section>
-        </section>
+        </section> -->
         <!-- /Challenges -->
 
         <!-- Closing Section -->
         <section>
           <h2 class="static-title">Policy of Truth &ndash; Thank You for Joining us</h2>
           <section>
-            <h3>Tellin&rsquo; what we told &rsquo;em, as we learned in English class&hellip;</h3>
-            <div class="col-three">
-              <div class="col first centered">
+            <div class="col-two index-list">
+              <div class="col left centered">
                 <p>
-                  <a href="#/workflow-lead">&ldquo;Workflow&rdquo;</a> is a generic
-                  business term for an editorial process.
+                  <a href="#/workflow-lead">Workflow:</a><br />
+                What is it? Who needs it?
+                </p>
+
+                <p>
+                  <strong>Case Studies</strong><br />
+                A tale of two <del>cities</del> <ins>sites</ins>:<br />
+                </p>
+                <p>
+                  <strong>Go client-side</strong>
                 </p>
               </div>
-              <div class="col middle centered">
+              <div class="col right centered">
                 <p>
-                  <a href="#/dor-lead">Stanford DoR</a> and
-                  <a href="#/upo-lead">Texas UPO</a> needed a way to manage this
-                  process within their CMS.
+                  <strong>Choosing</strong><br /><a href="#/drupal-lead">Drupal</a>
+                and <a href="#/workbench-lead">Workbench</a>
                 </p>
-              </div>
-              <div class="col last centered">
-                <p>
-                  <a href="#/workbench-lead">Workbench</a> extends
-                  <a href="#/drupal-lead">Drupal's</a> content modeling
-                  for revision management.
-                </p>
+                <p class="no-index"><strong>Horseshoes &amp; hand-grenades.</strong>
+              Making "close" count:</p>
               </div>
             </div>
-            <p class="callout">
-              Novel ideas and <a href="#/understanding-lead">deep business understanding</a>
-              help to <a href="#/challenges-lead">tackle challenges</a>.
+          </section>
+          <section class="centered">
+            <p>
+              Novel ideas, facility with your toolset and <a href="#/understanding-lead">deep business understanding</a>
+              help to <a href="#/challenges-lead">solve challenges</a>.
             </p>
+          </section>
+          <section class="centered">
+            <p class="callout">Workbench (Moderation and Access) for basic and
+            complex Workflows in Drupal</p>
+            <p>
+            <p style="font-size: 0.75em; text-align: center;">
             <p class="note">
               <a href="http://twitter.com/beautyhammer" title="Follow David Diers on Twitter">@beautyhammer</a>
               &amp; <a href="http://twitter.com/tsmith512" title="Follow Taylor Smith on Twitter">@tsmith512</a>
