@@ -14,12 +14,6 @@ font-family:'Univers LT W01 45 Light';
 font-family:'UniversLTW01-45LightObl';
 font-family:'Univers LT W01 55 Roman';
 font-family:'UniversLTW01-55Oblique';
-font-family:'Univers LT W01 65 Bold';
-font-family:'UniversLTW01-65BoldObli';
-font-family:'Univers LT W01 75 Black';
-font-family:'UniversLTW01-75BlackObl';
-font-family:'UniversLTW01-85ExtraBla';
-font-family:'UniversLTW01-85ExtraBkO';
 font-family:'UniversLTW01-47LightCn';
 font-family:'UniversLTW01-47LightCnO';
 font-family:'UniversLTW01-57Condense 723821';
@@ -28,27 +22,18 @@ font-family:'UniversLTW01-67BoldCn';
 font-family:'UniversLTW01-67BoldCnOb';
 font-family:'UniversLTW01-39ThinUltr';
 font-family:'UniversLTW01-49LightUlt';
-font-family:'UniversLTW01-59UltraCn';
 
 font-family:'Museo W01 100 Italic';
 font-family:'Museo W01 300 Italic';
 font-family:'Museo W01 500 Italic';
-font-family:'Museo W01 700 Italic';
-font-family:'Museo W01 900 Italic';
 font-family:'Museo W01 100';
 font-family:'Museo W01 300';
 font-family:'Museo W01 500';
-font-family:'Museo W01 700';
-font-family:'Museo W01 900';
 
 font-family:'Acta Symbols W95 Arrows';
 font-family:'ActaSymbolsW95-Circles';
-font-family:'ActaSymbolsW95-Flowers';
-font-family:'Acta Symbols W95 Labels';
 font-family:'Acta Symbols W95 Office';
 font-family:'Acta Symbols W95 Stars';
-font-family:'Acta Symbols W95 Time';
-font-family:'ActaSymbolsW95-Weather';
 */
 
 // Colors
@@ -469,15 +454,6 @@ div.col-three {
   }
 }
 
-.timeout {
-  &:before {
-    font-family:'Acta Symbols W95 Time';
-    font-size: 1.5em !important;
-    vertical-align: 0.375em;
-    content: 'd';
-  }
-}
-
 .compass {
   &:before {
     font-family:'Acta Symbols W95 Stars';
@@ -546,6 +522,14 @@ div.col-three {
     font-family:'ActaSymbolsW95-Circles';
     font-size: 2em;
     content: '8';
+  }
+}
+
+.circlecheck {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e0fb';
   }
 }
 
