@@ -397,6 +397,11 @@ div.col-three .middle-last {
   font-size: 2em;
   content: '8'; }
 
+.circlecheck:before {
+  font-family: 'icomoon';
+  font-size: 2em;
+  content: '\e0fb'; }
+
 .person:before {
   font-family: 'icomoon';
   font-size: 2em;

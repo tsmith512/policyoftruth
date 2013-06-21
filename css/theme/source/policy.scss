@@ -549,6 +549,14 @@ div.col-three {
   }
 }
 
+.circlecheck {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e0fb';
+  }
+}
+
 .person {
   &:before {
     font-family:'icomoon';
