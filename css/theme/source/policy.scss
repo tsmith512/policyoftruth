@@ -283,6 +283,8 @@ div.col-two, div.col-three {
   flex-flow: row wrap;
 
   .col {
+    position: relative;
+
     -webkit-flex: 1 0 0;
     -moz-flex: 1 0 0;
     -ms-flex: 1 0 0;
@@ -336,6 +338,14 @@ div.col-three {
   .last {
     border-left: 1px solid darken($navy, 5%);
   }
+  .first-middle {
+    width: 66.6% !important;
+    -webkit-flex: 2 0 0;
+    -moz-flex: 2 0 0;
+    -ms-flex: 2 0 0;
+    flex: 2 0 0;
+    border-right: 1px solid lighten($navy, 5%);
+  }
   .middle-last {
     width: 66.6% !important;
     -webkit-flex: 2 0 0;
@@ -356,6 +366,14 @@ div.col-three {
 
   &.centered {
     display: block !important;
+  }
+
+  &.link {
+    margin: 0.5em auto;
+    &:before {
+      font-size: 1em;
+      color: $lime;
+    }
   }
 
   &.big:before {
@@ -450,6 +468,23 @@ div.col-three {
     font-size: 1.5em !important;
     vertical-align: 0.375em;
     content: 'B';
+  }
+}
+
+
+.arrow-right-indented {
+  &.margin {
+    position: absolute;
+    z-index: 10;
+    font-size: 1.5em;
+    top: 40%;
+    right: -0.75em;
+  }
+  &:before {
+    font-family:'Acta Symbols W95 Arrows';
+    font-size: 1.5em !important;
+    vertical-align: 0.375em;
+    content: 'Z';
   }
 }
 
@@ -592,6 +627,14 @@ div.col-three {
   }
 }
 
+.house {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e000';
+  }
+}
+
 .paperpair {
   &:before {
     font-family:'icomoon';
@@ -629,6 +672,30 @@ div.col-three {
     font-family:'icomoon';
     font-size: 2em;
     content: '\e02d';
+  }
+}
+
+.suit {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e075';
+  }
+}
+
+.gears {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e08f';
+  }
+}
+
+.photo {
+  &:before {
+    font-family:'icomoon';
+    font-size: 2em;
+    content: '\e00e';
   }
 }
 

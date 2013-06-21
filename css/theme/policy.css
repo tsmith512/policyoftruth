@@ -215,6 +215,7 @@ div.col-two, div.col-three {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap; }
   div.col-two .col, div.col-three .col {
+    position: relative;
     -webkit-flex: 1 0 0;
     -moz-flex: 1 0 0;
     -ms-flex: 1 0 0;
@@ -251,6 +252,13 @@ div.col-three .middle {
   border-left: 1px solid #27313b; }
 div.col-three .last {
   border-left: 1px solid #27313b; }
+div.col-three .first-middle {
+  width: 66.6% !important;
+  -webkit-flex: 2 0 0;
+  -moz-flex: 2 0 0;
+  -ms-flex: 2 0 0;
+  flex: 2 0 0;
+  border-right: 1px solid #3b4a5a; }
 div.col-three .middle-last {
   width: 66.6% !important;
   -webkit-flex: 2 0 0;
@@ -268,6 +276,11 @@ div.col-three .middle-last {
     display: none; }
   .icon.centered {
     display: block !important; }
+  .icon.link {
+    margin: 0.5em auto; }
+    .icon.link:before {
+      font-size: 1em;
+      color: #23cc6f; }
   .icon.big:before {
     font-size: 4em !important;
     margin-bottom: 0.375em;
@@ -329,6 +342,18 @@ div.col-three .middle-last {
   font-size: 1.5em !important;
   vertical-align: 0.375em;
   content: 'B'; }
+
+.arrow-right-indented.margin {
+  position: absolute;
+  z-index: 10;
+  font-size: 1.5em;
+  top: 40%;
+  right: -0.75em; }
+.arrow-right-indented:before {
+  font-family: 'Acta Symbols W95 Arrows';
+  font-size: 1.5em !important;
+  vertical-align: 0.375em;
+  content: 'Z'; }
 
 .chevron-down {
   margin-bottom: -0.375em !important; }
@@ -419,6 +444,11 @@ div.col-three .middle-last {
   font-size: 2em;
   content: '\e003'; }
 
+.house:before {
+  font-family: 'icomoon';
+  font-size: 2em;
+  content: '\e000'; }
+
 .paperpair:before {
   font-family: 'icomoon';
   font-size: 2em;
@@ -443,6 +473,21 @@ div.col-three .middle-last {
   font-family: 'icomoon';
   font-size: 2em;
   content: '\e02d'; }
+
+.suit:before {
+  font-family: 'icomoon';
+  font-size: 2em;
+  content: '\e075'; }
+
+.gears:before {
+  font-family: 'icomoon';
+  font-size: 2em;
+  content: '\e08f'; }
+
+.photo:before {
+  font-family: 'icomoon';
+  font-size: 2em;
+  content: '\e00e'; }
 
 /*********************************************
  * NAVIGATION CONTROLS

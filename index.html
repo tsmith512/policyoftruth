@@ -576,41 +576,86 @@
               </div>
               <div class="col middle-last">
                 <ul>
-                  <li>Traditional Access models are based on static relationships to nodes</li>
-                  <li>Recommended permission settings are over permissive for a flow like this</li>
+                  <li>
+                    Traditional Access models are based on static relationships
+                    to nodes (categories, business areas, etc.)
+                  </li>
+                  <li>Recommended permission settings are over permissive</li>
                 </ul>
               </div>
             </div>
           </section>
           <section>
-            <h3>So... we turned workflow on its side: &ldquo;Moderating&rdquo; with Access</h3>
-            <p>Traditional workflow: A flow of actions taken by actors</p>
-            <p>Workflow on its side: A flow of actors who take actions</p>
+            <h3>Workbench on its side: &ldquo;Moderating&rdquo; with Access</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <br />
+                <figure class="icon big gears"><span>Working Steps</span></figure><br />
+                <p><strong>Traditional Workflow</strong><br />A flow of <em>actions</em><br />taken by users</p>
+                <figure class="icon margin arrow-right-indented"><span>&rarr;</span></figure>
+              </div>
+              <div class="col right centered">
+                <br />
+                <figure class="icon big suit"><span>Participant</span></figure><br />
+                <p><strong>Workflow on its side</strong><br />A flow of <em>users</em><br />who take actions</p>
+              </div>
+            </div>
           </section>
           <section>
             <h3>&ldquo;Moderating&rdquo; with Access</h3>
-            <ul>
-              <li>Combined role permissions and taxonomy that enabled user capabilities when a node entered their taxonomy</li>
-              <li>Used a simple series of states: draft, in review, published</li>
-              <li>Set up a taxonomy based workbench access scheme that mirrored UPO constituents</li>  
-            </ul>
+            <div class="col-three">
+              <div class="col first centered">
+                <p class="imgcap">UPO Access Groups</p>
+                <img src="gfx/wbacc_revgroups.png" alt="UPO Review Groups in Workbench Access" />
+              </div>
+              <div class="col middle-last">
+                <ul>
+                  <li>Taxonomy-based Workbench Access scheme mirrored UPO constituents</li>  
+                  <li>Role permissions + taxonomy membership &rarr; capabilities when a node enters a user's taxonomy</li>
+                  <li>Few, simple Moderation states: Draft, In Review, Published</li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section>
             <h3>Using Moderation states to trigger, not govern, the worfklow</h3>
-            <ul>
-              <li>New nodes and edits on pre-existing nodes start in draft state (outside of workflow)</li>
-              <li>Authors trigger review process when they transition nodes to "in review" state</li>
-              <li>Using the workbench state change hook we triggered the creation of our helper a helper workflow node.</li>
-            </ul>
+            <div class="col-three">
+              <div class="col first centered">
+                <p class="imgcap">UPO Moderation Transitions</p>
+                <img src="gfx/wbmod_upotransitions.png" alt="UPO Moderation State Transitions" />
+              </div>
+              <div class="col middle-last">
+                <ul>
+                  <li>New nodes and edits on pre-existing nodes start in <strong>Draft</strong> state</li>
+                  <li>Authors trigger review process by transitioning to <strong>In Review</strong>.</li>
+                  <li>
+                    Using the <abbr title="hook_workbench_moderation_transition">state change hook</abbr>
+                    <a href="http://drupalcode.org/project/workbench_moderation.git/blob/342a5703c97caad860d8907af2c8efaec9ebb405:/workbench_moderation.api.php#l66" tile="See 'hook_workbench_moderation_transition' in workbench_moderation.api.php from 7.x-1.3">(API)</a>
+                    we triggered the creation of our &ldquo;helper&rdquo; workflow node.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section>
-            <h3>Controling Workflow on its side: Workflow nodes</h3>
-            <ul>
-              <li>Helper nodes that were tied to nodes in workflow</li>
-              <li>Record starting and ending VIDs</li>
-              <li>Workflow Nodes used an extended commenting form to record routing</li>
-              <li>Actions needed and responses were recorded as well which provides a far richer moderation experience and history.</li>
-            </ul>
+            <h3>Controling Workflow on its side: Workflow Checklist nodes</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <p class="imgcap">Workflow Checklist</p>
+                <a href="gfx/wfchecklist.png" title="View Workflow Checklist at full-size">
+                  <img src="gfx/wfchecklist_small.png" alt="Workflow Checklist, a routing sheet" />
+                  <figure class="icon photo link"><span>View at Full Size</span></figure>
+                </a>
+              </div>
+              <div class="col right">
+                <ul>
+                  <li>Helper nodes tied to documents in review</li>
+                  <li>Recorded starting and ending <abbr title="Unique Revision IDs">VIDs</abbr></li>
+                  <li>Extended commenting form to record routing</li>
+                  <li>Instructions and responses recorded in comment body for rich moderation experience and history.</li>
+                </ul>
+              </div>
+            </div>
           </section> 
           <section>
             <h3>Challenge Solved</h3>
@@ -620,12 +665,14 @@
               </div>
               <div class="col middle-last">
                 <p>
-                  The flow of creation, review, and publication of policies and supplemental
+                  The flow of creation and publication of policies and supplemental
                   documentation varies case-by-case.
                 </p>
                 <figure class="icon chevron-down centered"><span>Solution:</span></figure>
                 <p>
-                  Turn workflow on its side - moderate through access, use helper nodes, use state transitions permissions to manage workflow triggers not direct workflow.
+                  <strong>Rotate Workbench:</strong> moderate with Access,
+                  use helper nodes, use state transitions permissions to manage
+                  workflow triggers not direct workflow.
                 </p>
               </div>
             </div>
@@ -637,24 +684,39 @@
             <h3>Overview</h3>
             <div class="col-three">
               <div class="col first centered">
-                <br /><br />
-                <figure class="icon big homeoffice"><span>Home</span></figure>
+                <br />
+                <figure class="icon big house"><span>Home</span></figure>
               </div>
               <div class="col middle-last">
                 <p>
-                  The system and the policy review process is brand new &emdash; <strong></strong>How will users know what to do?</strong>
+                  The system and the policy review process is brand new &mdash; <strong></strong>How will users know what to do?</strong>
                 </p>
               </div>
             </div>
           </section>
           <section>
-            <h3>No existing dashboard really helped here (pt 1)</h3>
-            <h4>Conceptual Divergence</h4>
-            <ul>
-              <li>Non-WB: are not workflow aware</li>
-              <li>WB: are Passive and state-based not actions based</li>
-              <li>WB: does not provide role-based context</li>
-            </ul>
+            <h3 class="iconinline number1">Existing dashboards unhelpful:</h3>
+            <div class="col-two">
+              <div class="col left centered">
+                <p class="imgcap">Standard &ldquo;My Workbench&rdquo; Dashboard</p>
+                <a href="gfx/wb_dashboard.png" title="View 'My Workbench' at full-size">
+                  <img src="gfx/wb_dashboard_small.png" alt="Workbench-provided 'My Workbench' dashboard" />
+                  <figure class="icon photo link"><span>View at Full Size</span></figure>
+                </a>
+              </div>
+              <div class="col right">
+                <h4>Conceptual Divergence</h4>
+                <ul>
+                  <li>Core-provided: not Workbench aware</li>
+                  <li>WB-provided:
+                    <ul>
+                      <li>passive and state- not action-based</li>
+                      <li>No role-based context</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section>
             <h3>No existing dashboard really helped here (pt 2)</h3>
@@ -681,7 +743,7 @@
             <div class="col-three">
               <div class="col first centered">
                 <br /><br />
-                <figure class="icon big homeoffice"><span>Home</span></figure>
+                <figure class="icon big house"><span>Home</span></figure>
               </div>
               <div class="col middle-last">
                 <p>
