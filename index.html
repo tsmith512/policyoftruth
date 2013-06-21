@@ -524,8 +524,6 @@
                 <figure class="icon number3"><span>3.</span></figure><br />
                 <p><a href="#/permissions-challenge">Managing Permissions</a></p>
                 <figure class="icon number4"><span>4.</span></figure><br />
-                <p><a href="#/supportingdocs-challenge">Supporting Documentation</a></p>
-                <figure class="icon number5"><span>5.</span></figure><br />
                 <p><a href="#/history-challenge">Recording History</a></p>
               </div>
             </div>
@@ -611,7 +609,7 @@
               <div class="col middle-last">
                 <ul>
                   <li>Taxonomy-based Workbench Access scheme mirrored UPO constituents</li>  
-                  <li>Role permissions + taxonomy membership &rarr; capabilities when a node enters a user's taxonomy</li>
+                  <li>Role permissions + taxonomy traversal &rarr; capabilities are as-needed</li>
                   <li>Few, simple Moderation states: Draft, In Review, Published</li>
                 </ul>
               </div>
@@ -651,7 +649,7 @@
                 <ul>
                   <li>Helper nodes tied to documents in review</li>
                   <li>Recorded starting and ending <abbr title="Unique Revision IDs">VIDs</abbr></li>
-                  <li>Extended commenting form to record routing</li>
+                  <li>Enabled comments on helper nodes with extended commenting form to record routing</li>
                   <li>Instructions and responses recorded in comment body for rich moderation experience and history.</li>
                 </ul>
               </div>
@@ -747,7 +745,7 @@
               </div>
               <div class="col middle-last">
                 <p>
-                  The system and the policy review process is brand new &emdash;
+                  The system and the policy review process is brand new &mdash;
   
                   <strong>How will users know what to do?</strong>
                 </p>
@@ -770,41 +768,71 @@
                 <figure class="icon super draft-locked"><span>Read Only</span></figure>
               </div>
               <div class="col middle-last">
-                <p>
-                </p>
-                <figure class="icon chevron-down centered"><span>Solution:</span></figure>
-                <p>
-                </p>
+                <p>Policy editing capabilities need tight management, draft visibility should make business 
+                sense, managing access and permissions should be simple, workflow tasks must be delegatable.</p>
               </div>
             </div>
           </section>
           <section>
-            <h3>Owner / sponsor oversight</h3>
+            <h3>Moderation: Recommended configuration didn't work here</h3>
+            <p><a href="https://drupal.org/node/1175592">Recommended permission settings</a> for moderation posed management, security, 
+                   and business challenges.
+            </p>
+            <ul>
+              <li>No concept of a non-editing reviewer editors, moderators and publishers all need "edit any content type"</li>
+              <li>Review roles can see all moderation messages but policy is a sensitive/legal space</li>
+              <li>Users with multiple roles have too much power in some capacities</li>
+              <li>Suited to linear and hiearchical flow/access scheme - not as-needed variable workflow</li>
+            </ul>
           </section>
           <section>
-            <h3>User management though taxonomy</h3>
+            <h3>Access: Other issues</h3>
+            <ul>
+              <li>Administration of access can be opaque - needs to be dead simple</li>
+              <li>Need to honor and protect policy portfolios and allow delegation within portfolios</li>
+              <li>Taxonomy traversal prevented access by policy stakeholders when out of their taxonomy</li>   
+            </ul>
           </section>
           <section>
-            <h3>Delegation</h3>
+            <h3>Solving Permission Problems Differently</h3>
+            <ul>
+              <li>Did not grant "edit any content"</li>
+              <li>Custom CTOOLS-based access plugins that intepreted taxonomy traversal
+                <ul>
+                  <li>Augmented workbench node access restrictions with taxonomy traversal sensitive plugin.</li>
+                  <li>As a result, nodes in unpublished state in workflow could now be seen by non-editors</li>
+                  <li>Also used for panels pane visibility and restricting auxilliary node access in relation to taxonomy traversal</li>
+                  <li>Used outside of CTOOLs spaces by defining contexts and mocking CTOOLs</li>
+                  <li>Combined with taxonomy references on policy nodes provided taxonomy access exceptions for stakeholders</li>
+                </ul>
+              </li>
+            </ul>
+            <p>* Workbench Moderation 2 has switched to a CTOOLs based permission handling.</p>
           </section>
           <section>
-            <h3>Read-only reviews</h3>
+            <h3>Solving Permission Problems Differently</h3>
+            <p>Simplified permission management</p>
+            <ul>
+              <li>Chose a proliferation of taxonomy terms over a proliferation of Roles and permissions</li>
+              <li>Permission changes within roles would be rare - reducing error</li>
+              <li>Add individuals to taxonomy terms by the user not role</li>
+              <li>Taxonomy is organized by role but empty at that level, child taxonomy terms house users and their delegates</li>
+              <li>Nodes have taxonomy references for sponsor and owner so that all members of a taxonomy can be delegates.</li>
+            </ul>
           </section>
-        </section>
-        <section>
-          <h2 class="iconinline number4">Documentation &amp; Complementary Nodes</h2>
-          <section id="supportingdocs-challenge">
+          <section>
             <h3>Overview</h3>
             <div class="col-three">
               <div class="col first centered">
-                <br /><br />
-                <figure class="icon big book"><span>History Book</span></figure>
+                <figure class="icon super draft-locked"><span>Read Only</span></figure>
               </div>
               <div class="col middle-last">
-                <p>
-                </p>
+                <p>Policy editing capabilities need tight management, draft visibility should make business 
+                sense, managing access and permissions should be simple, workflow tasks must be delegatable.</p>
                 <figure class="icon chevron-down centered"><span>Solution:</span></figure>
-                <p>
+                <p>Chose more restrictions through custom permissions and node access augmentation, simplified management
+                 through a proliferation of terms over roles, created workbench taxonomy term references to allow key term groups 
+                 oversight capabilities on policy nodes.
                 </p>
               </div>
             </div>
