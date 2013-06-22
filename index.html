@@ -121,7 +121,7 @@
               <div class="col right">
                 <ol>
                   <li>Author creates and revises a blog post about tripe b&eacute;nh m&igrave;)</li>
-                  <li>Contributors notifies Editors to review</li>
+                  <li>Contributors notifies Editor to review</li>
                   <li>
                     Editor may&hellip;
                     <ul>
@@ -281,8 +281,8 @@
               <div class="col right">
                 <ul>
                   <li>Robust content modeling</li>
-                  <li>Unify workflow application and content management</li>
-                  <li>Abandon deeply disappointing proprietary CMS</li>
+                  <li>Drupal as Framework</li>
+                  <li>University Drupal Community</li>
                   <li>Cost effectiveness</li>
                 </ul>
               </div>
@@ -525,7 +525,7 @@
               </div>
               <div class="col middle-last">
                 <ul>
-                  <li>Transitions managed individually</li>
+                  <li>Transition management</li>
                   <li>Transitions do not control access &rarr; twice the maintenance</li>
                   <li>
                     Moderation history damaged if
@@ -620,8 +620,8 @@
                 <ul>
                   <li>Helper nodes tied to documents in review</li>
                   <li>Recorded starting and ending <abbr title="Unique Revision IDs">VIDs</abbr></li>
-                  <li>Enabled comments on helper nodes with extended commenting form to record routing</li>
-                  <li>Instructions and responses recorded in comment body for rich moderation experience and history.</li>
+                  <li>Used rich node functionality to sidecar moderation capabilities</li>
+                  <li>Comments, taxonomy, fields, and fapi created a far richecr moderation experience and history.</li>
                 </ul>
               </div>
             </div>
@@ -790,10 +790,9 @@
             </p>
             <ul>
               <li>Suited to linear and hierarchical flow/access scheme.</li>
-              <li>Moderators and publishers all given "edit any content type."</li>
+              <li>Moderators and publishers all given "edit any content" - no Review only role</li>
               <li>Node moderation messages are visible to all.</li>
               <li>Users with multiple roles receive too many permissions.</li>
-              <li>Lacks <em>non-editing</em> reviewer role.</li>
             </ul>
           </section>
           <section>
@@ -815,9 +814,7 @@
                 <ul>
                   <li>Augmented workbench node access restrictions</li>
                   <li>Allowed non-editors to view unpublished content</li>
-                  <li>Used for Panels pane visibility</li>
-                  <li>Restricted auxiliary node access relative to traversal</li>
-                  <li>Defined contexts for use outside Ctools spaces</li>
+                  <li>Used node traversal aware permissions for a variety of needs</li>
                   <li>
                     Taxonomy references on policy nodes provided access exceptions
                     for stakeholders (owners and sponsors).
@@ -834,17 +831,10 @@
             <h3>Alternative Solutions for Permissions</h3>
             <p>Simplified permission management:</p>
             <ul>
-              <li>Management via proliferation of taxonomy terms, not roles</li>
-              <li>Rarely need to change permissions of roles &rarr; reduce errors</li>
-              <li>Add individuals to taxonomy terms by the user not role</li>
-              <li>Add users to taxonomy terms individually, not per role</li>
+              <li>Proliferation of taxonomy terms, not roles</li>
+              <li>Emphasized concrete management ove abstraction</li>
               <li>
-                Taxonomy is <em>organized</em> by business-role but empty at
-                that level; child taxonomy terms house users and their delegates.
-              </li>
-              <li>
-                Nodes have term references for owner and sponsor groups &rarr;
-                all term members can be delegates.
+                Used term references to Workbench taxonomy to accomodate overarching access exceptions for stakeholders
               </li>
             </ul>
           </section>
