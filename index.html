@@ -120,14 +120,14 @@
               </div>
               <div class="col right">
                 <ol>
-                  <li>Author creates and revises their own unpublished content (i.e. a blog post about tripe banh mi)</li>
-                  <li>Contributors signals Editors to review</li>
+                  <li>Author creates and revises a blog post about tripe b&eacute;nh m&igrave;)</li>
+                  <li>Contributors notifies Editor to review</li>
                   <li>
                     Editor may&hellip;
                     <ul>
-                      <li>Suggest edits.</li>
-                      <li>Make edits.</li>
-                      <li>Publish.</li>
+                      <li>Suggest edits- "please be less disdainful".</li>
+                      <li>Make edits. - "Removing spiteful comments"</li>
+                      <li>Publish - "Against my better judgment"</li>
                     </ul>
                   </li>
                 </ol>
@@ -176,10 +176,7 @@
                 engaging policy owners, sponsors, subject matter experts, and advisors.
               </li>
               <li>
-                <strong>Assimilate stores</strong> of University policy outside of the HOP
-              </li>
-              <li>
-                <strong>Provide historical policy materials</strong> for dispute resolution.
+                <strong>Provide historical policy materials</strong>
               </li>
             </ol>
           </section>
@@ -263,7 +260,7 @@
               <div class="col right centered">
                 <figure class="icon browser"><span>Clear Deliverables</span></figure><br />
                 <p>
-                  <strong>Clients think like they work</strong>; UPO preferred
+                  <strong>People think like they work</strong>; UPO preferred
                   implementation over abstraction, complete features over drafts.
                 </p>
               </div>
@@ -284,8 +281,8 @@
               <div class="col right">
                 <ul>
                   <li>Robust content modeling</li>
-                  <li>Unify workflow application and content management</li>
-                  <li>Abandon deeply disappointing proprietary CMS</li>
+                  <li>Drupal as Framework</li>
+                  <li>University Drupal Community</li>
                   <li>Cost effectiveness</li>
                 </ul>
               </div>
@@ -302,7 +299,7 @@
               </div>
               <div class="col middle centered">
                 <figure class="icon number2"><span>2.</span></figure>
-                <p>Experience in management of published content natually led to
+                <p>Experience in management of published content naturally led to
                 management of &ldquo;pre-published&rdquo; content.</p>
               </div>
               <div class="col last centered">
@@ -528,7 +525,7 @@
               </div>
               <div class="col middle-last">
                 <ul>
-                  <li>Transitions managed individually</li>
+                  <li>Transition management</li>
                   <li>Transitions do not control access &rarr; twice the maintenance</li>
                   <li>
                     Moderation history damaged if
@@ -623,8 +620,8 @@
                 <ul>
                   <li>Helper nodes tied to documents in review</li>
                   <li>Recorded starting and ending <abbr title="Unique Revision IDs">VIDs</abbr></li>
-                  <li>Enabled comments on helper nodes with extended commenting form to record routing</li>
-                  <li>Instructions and responses recorded in comment body for rich moderation experience and history.</li>
+                  <li>Used rich node functionality to sidecar moderation capabilities</li>
+                  <li>Comments, taxonomy, fields, and fapi created a richer moderation experience and history.</li>
                 </ul>
               </div>
             </div>
@@ -787,16 +784,15 @@
           <section>
             <h3>Moderation: recommended configuration didn't work here</h3>
             <p>
-              <a href="https://drupal.org/node/1175592" title="Workbench Modeation configuration recommendations">
+              <a href="https://drupal.org/node/1175592" title="Workbench Moderation configuration recommendations">
               Recommended permission settings</a> for Moderation posed management,
               security, and business challenges:
             </p>
             <ul>
               <li>Suited to linear and hierarchical flow/access scheme.</li>
-              <li>Moderators and publishers all given "edit any content type."</li>
+              <li>Moderators and publishers all given "edit any content" - no Review only role</li>
               <li>Node moderation messages are visible to all.</li>
               <li>Users with multiple roles receive too many permissions.</li>
-              <li>Lacks <em>non-editing</em> reviewer role.</li>
             </ul>
           </section>
           <section>
@@ -818,9 +814,7 @@
                 <ul>
                   <li>Augmented workbench node access restrictions</li>
                   <li>Allowed non-editors to view unpublished content</li>
-                  <li>Used for Panels pane visibility</li>
-                  <li>Restricted auxiliary node access relative to traversal</li>
-                  <li>Defined contexts for use outside Ctools spaces</li>
+                  <li>Used node traversal aware permissions for a variety of needs</li>
                   <li>
                     Taxonomy references on policy nodes provided access exceptions
                     for stakeholders (owners and sponsors).
@@ -837,17 +831,10 @@
             <h3>Alternative Solutions for Permissions</h3>
             <p>Simplified permission management:</p>
             <ul>
-              <li>Management via proliferation of taxonomy terms, not roles</li>
-              <li>Rarely need to change permissions of roles &rarr; reduce errors</li>
-              <li>Add individuals to taxonomy terms by the user not role</li>
-              <li>Add users to taxonomy terms individually, not per role</li>
+              <li>Proliferation of taxonomy terms, not roles</li>
+              <li>Emphasized concrete management over abstraction</li>
               <li>
-                Taxonomy is <em>organized</em> by business-role but empty at
-                that level; child taxonomy terms house users and their delegates.
-              </li>
-              <li>
-                Nodes have term references for owner and sponsor groups &rarr;
-                all term members can be delegates.
+                Used term references to Workbench taxonomy to accommodate overarching access exceptions for stakeholders
               </li>
             </ul>
           </section>
@@ -894,7 +881,7 @@
             <p>Key problems</p>
             <ul>
               <li>Access transitions are stateless and vid-less</li>
-              <li>Auxilliary and support nodes increased complexity</li>
+              <li>Auxiliary and support nodes increased complexity</li>
               <li>Views is not your friend here</li>
               <li>Combining existing node revision history with workbench moderation history is difficult</li>
               <li>Extended to other events - like public comments, abandoned and unapproved workflows, edits made outside of workflow
